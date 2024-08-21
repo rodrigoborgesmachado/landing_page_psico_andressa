@@ -1,0 +1,71 @@
+.section {
+    background-color: #6e0d0a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.section h1 {
+    margin-top: 9.375rem;
+    font-size: 2.125rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.section p {
+    font-size: 18px;
+    margin: 70px 210px;
+    line-height: 1.6;
+    text-align: center;
+    position: relative;
+}
+
+.firstLine {
+    font-weight: bold;
+}
+
+.section form {
+    display: inline-block;
+    margin-bottom: 150px;
+}
+
+.section input[type="button"] {
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    color: #6e0d0a;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section input[type="button"]:hover {
+    background: linear-gradient(135deg, #ef4c0b, #e9b20a);
+    color: white;
+    font-size: 1.2em;
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+.flower {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: url('./Layer_1-2.png');
+    background-size: contain;
+}
+
+.flower-bottom-left {
+    bottom: -55px;
+    left: -18px;
+}
+
+.flower-top-right {
+    top: 10px;
+    right: -30px;
+    transform: scaleX(-1)
+}
