@@ -1,8 +1,8 @@
-import styles from './SectionDarkRed.module.css';
+import styles from './RetentionSection.module.css';
 
-function SectionDarkRed() {
+function RetentionSection() {
 	return (
-		<section className={styles.section}>
+		<section className={styles.retentionSection}>
 			<div>
 				<h1>Descubra Seu Potencial!</h1>
 				<p>
@@ -14,7 +14,6 @@ function SectionDarkRed() {
 				</p>
 				<form action="">
 					<input type="button" value="Entre em contato por e-mail" />
-
 				</form>
 				<div className={`${styles.flower} ${styles['flower-bottom-left']}`}></div>
 				<div className={`${styles.flower} ${styles['flower-top-right']}`}></div>
@@ -23,4 +22,4 @@ function SectionDarkRed() {
 	);
 }
 
-export default SectionDarkRed;
+export default RetentionSection;
