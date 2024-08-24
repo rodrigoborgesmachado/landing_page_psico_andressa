@@ -1,8 +1,8 @@
 import styles from './css/Common.module.css';
 
-function Title({ title, style: variant = "title" }) {
+function Title({ title, style: variant = "titleDefault" }) {
     return ( 
-        <h1 className={`${styles.Common} ${styles[variant]}`}>{title}</h1>
+        <h2 className={`${styles.titleDefault} ${styles[variant]}`}>{title}</h2>
     );
 }
 
