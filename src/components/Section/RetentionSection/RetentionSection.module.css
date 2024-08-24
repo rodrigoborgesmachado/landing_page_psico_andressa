@@ -8,11 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.retentionSection> div{
-    border: #e9b20a 2px solid;
+.retentionSection>div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .retentionSection h1 {
@@ -37,6 +40,7 @@
 .retentionSection form {
     display: inline-block;
     margin-bottom: 150px;
+    min-height: 50px;
 }
 
 .retentionSection input[type="button"] {
@@ -49,16 +53,16 @@
     cursor: pointer;
     transition: 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .retentionSection input[type="button"]:hover {
+}
+
+.retentionSection input[type="button"]:hover {
     background: linear-gradient(135deg, #ef4c0b, #e9b20a);
     color: white;
     font-size: 1.2em;
     transform: translateY(-6px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-  }
-  
+}
+
 .flower {
     position: absolute;
     width: 230px;

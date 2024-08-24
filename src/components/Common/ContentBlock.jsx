@@ -3,7 +3,7 @@ import styles from './css/Common.module.css';
 function ContentBlock({title, description}) {
     return (
         <div className={styles.contentBlock}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <p>{description}</p>
         </div>
     );
