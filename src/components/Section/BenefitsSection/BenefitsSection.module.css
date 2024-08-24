@@ -39,7 +39,7 @@ p{
     position: relative;
 } */
 
-.containerSec{
+.benefitsSection{
     /* border: 2px solid pink; */
     display: flex;
     flex-direction: row;

@@ -1,41 +1,39 @@
-import CircleImageAndTitle from '../CircleImageAndTitle/CircleImageAndTitle';
-import css from './Secao03.module.css'
 
-function Secao03() {
+import css from './BenefitsSection.module.css'
+import CircleImageAndTitle from './CircleImageAndTitle/CircleImageAndTitle';
+
+function BenefitsSection() {
 
 	const subtitleImage = [
 		{
-		  image: "/Images/avatar.png",
+		  image: "/icons/avatar.png",
 		  subtitle: "Autoestima",
 		},
 		{
-		  image: "/Images/natural-mode.png",
+		  image: "/icons/natural-mode.png",
 		  subtitle: "Bem-estar",
 		},
 		{
-		  image: "../Images/dumbbell.png",
+		  image: "../icons/dumbbell.png",
 		  subtitle: "Saúde Integral",
 		},
 		{
-		  image: "./Images/every-user.png",
+		  image: "./icons/every-user.png",
 		  subtitle: "Relacionamentos Saudáveis",
 		},
 		{
-		  image: "./Images/crown-three.png",
+		  image: "./icons/crown-three.png",
 		  subtitle: "Autoconhecimento",
 		},
 		{
-		  image: "./Images/escalators.png",
+		  image: "./icons/escalators.png",
 		  subtitle: "Resiliência",
 		}
 	  ]
 
 	return (
-
 		<section>
-
-			<div className={css.containerSec}>
-
+			<div className={css.benefitsSection}>
 				<div className={css.containerDentro}>
 					<div className={css.titleDesc}>
 						<h2>Como a Terapia Ajuda</h2>
@@ -43,7 +41,6 @@ function Secao03() {
 						<p>Você terá um espaço seguro para expressar suas preocupações e melhorar a qualidade de seus relacionamentos, resultando em uma vida mais equilibrada e satisfatória.</p>
 					</div>
 				</div>
-
 				<div className={css.containerDentro}>
 					<div className={css.boxes}>
 						{subtitleImage.map((item, index) => (
@@ -62,4 +59,4 @@ function Secao03() {
 	);
 }
 
-export default Secao03;
+export default BenefitsSection;
