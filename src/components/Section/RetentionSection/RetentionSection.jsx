@@ -5,7 +5,7 @@ function RetentionSection() {
 	return (
 		<section className={styles.retentionSection}>
 			<div>
-				<Title title={'Descubra Seu Potencial!'} sltyle={'titleWhite'}/>
+				<Title title={'Descubra Seu Potencial!'} style={'titleWhite'}/>
 				<p>
 					<span className={styles.firstLine}>
 						Você pode descobrir sua essência e desenvolver seu potencial reconstruindo sua autoestima.
