@@ -1,10 +1,11 @@
+import Title from '../../Common/Title';
 import styles from './RetentionSection.module.css';
 
 function RetentionSection() {
 	return (
 		<section className={styles.retentionSection}>
 			<div>
-				<h1>Descubra Seu Potencial!</h1>
+				<Title title={'Descubra Seu Potencial!'} sltyle={'titleWhite'}/>
 				<p>
 					<span className={styles.firstLine}>
 						Você pode descobrir sua essência e desenvolver seu potencial reconstruindo sua autoestima.
