@@ -12,7 +12,7 @@ function SpecialtySection() {
 
     return ( 
         <section className={styles.specialtySection}>
-            <Title title="Minha especialidade"/>
+            <Title title="Minha especialidade" style='titleDefault'/>
             <ContentBoxGrid boxContents={boxContents} />
             <Button name="Para Você ou Sua Empresa" />
         </section>
