@@ -1,4 +1,4 @@
-import styles from './css/ContentBoxGrid.module.css';
+import styles from './SpecialtySection.module.css';
 import ContentBox from "./ContentBox";
 
 function ContentBoxGrid({ boxContents }) {

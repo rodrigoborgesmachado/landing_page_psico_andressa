@@ -5,12 +5,11 @@
     color: #6e0d0a;
     /* flex: 1; */
 }
-
+/* 
 h2{
     font-weight: bold;
     font-size: 34px;
     margin-bottom: 50px;
-    /* color: #2F0202; */
 }
 
 p{
@@ -18,7 +17,7 @@ p{
     text-align: justify;
     margin: 40px 0px;
     line-height: 25px;
-}
+} */
 
 .boxes{
     /* border: 1px solid blue; */
@@ -30,17 +29,15 @@ p{
     justify-content: space-between;
 }
 
-section{
-    /* border: 2px solid red; */
+/* section{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     background-color: #FFE5D8;
     position: relative;
-}
+} */
 
 .containerSec{
     /* border: 2px solid pink; */

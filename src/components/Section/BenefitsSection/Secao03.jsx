@@ -1,4 +1,3 @@
-import React from 'react';
 import CircleImageAndTitle from '../CircleImageAndTitle/CircleImageAndTitle';
 import css from './Secao03.module.css'
 

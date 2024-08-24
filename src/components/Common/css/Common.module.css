@@ -1,0 +1,46 @@
+.button {
+    margin-top: 3.4375rem;
+    background-color: #5b3923;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3e2919;
+    transition: all .2s;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.title {
+    color: #5b3923;
+    font-size: 2rem;
+    margin-bottom: 3.4375rem;
+    text-align: center;
+}
+
+.contentBlock {
+    padding: 0 2rem;
+}
+
+.contentBlock h2 {
+    color: #5b3923;
+    font-size: 1.5rem;
+    margin-top: 3.5625rem;
+    margin-bottom: 0.8125rem;
+}
+
+.contentBlock p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 5.0625rem;
+}

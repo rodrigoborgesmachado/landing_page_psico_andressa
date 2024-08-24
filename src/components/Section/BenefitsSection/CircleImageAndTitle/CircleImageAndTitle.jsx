@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './CircleImageAndTitle.module.css';
 
 function CircleImageAndTitle({image, title}) {

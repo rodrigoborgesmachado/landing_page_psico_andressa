@@ -1,7 +1,7 @@
 import Button from "./Button";
 import ContentBoxGrid from "./ContentBoxGrid";
 import Title from "./Title";
-import styles from './css/SpecialtySection.module.css';
+import styles from './SpecialtySection.module.css';
 
 function SpecialtySection() {
     const boxContents = [

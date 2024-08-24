@@ -1,4 +1,4 @@
-import styles from './css/ContentBox.module.css';
+import styles from './SpecialtySection.module.css';
 
 function ContentBox({ image, title, description, imageDescription }) {
     return (

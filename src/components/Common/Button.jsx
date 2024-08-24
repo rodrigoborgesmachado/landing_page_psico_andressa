@@ -1,4 +1,4 @@
-import styles from './css/Button.module.css';
+import styles from './css/Common.module.css';
 
 function Button({ name, path }) {
     return (

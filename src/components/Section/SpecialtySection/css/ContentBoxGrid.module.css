@@ -1,8 +1,0 @@
-.contentBoxGrid {
-    display: flex;
-    justify-content: space-between;
-    gap: 4.5625rem;
-    width: 100%;
-    max-width: 75rem;
-  }
-  
