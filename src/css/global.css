@@ -6,3 +6,12 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+section {
+    min-height: 100vh;
+}
+
+section > div {
+    width: 75rem;
+}
+
