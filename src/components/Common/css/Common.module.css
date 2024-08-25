@@ -40,13 +40,17 @@
 }
 
 .titleFAQSection{
-    color: #000;
+    color: #4e342e;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #4e342e;
 }
 
 
 .titleMediaSection{
     color:black;
     text-align: left;
+
 }
 
 /* --------------------------------contentBlock-------------------------------- */
