@@ -7,27 +7,27 @@ function BenefitsSection() {
 
 	const subtitleImage = [
 		{
-		  image: "/icons/avatar.png",
+		  image: "/Icons/avatar.png",
 		  subtitle: "Autoestima",
 		},
 		{
-		  image: "/icons/natural-mode.png",
+		  image: "/Icons/natural-mode.png",
 		  subtitle: "Bem-estar",
 		},
 		{
-		  image: "../icons/dumbbell.png",
+		  image: "/Icons/dumbbell.png",
 		  subtitle: "Saúde Integral",
 		},
 		{
-		  image: "./icons/every-user.png",
+		  image: "/Icons/every-user.png",
 		  subtitle: "Relacionamentos Saudáveis",
 		},
 		{
-		  image: "./icons/crown-three.png",
+		  image: "/Icons/crown-three.png",
 		  subtitle: "Autoconhecimento",
 		},
 		{
-		  image: "./icons/escalators.png",
+		  image: "/Icons/escalators.png",
 		  subtitle: "Resiliência",
 		}
 	  ]
