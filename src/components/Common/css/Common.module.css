@@ -20,13 +20,36 @@
     transform: scale(0.95);
 }
 
+/* --------------------------------Title-------------------------------- */
+
 .titleDefault {
     color: #5b3923;
     font-size: 2rem;
-    margin-bottom: 3.4375rem;
+    margin-bottom: 5.4375rem;
     text-align: center;
 }
 
+.titleBenefitsSection{
+    color: #6e0d0a;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.titleRetentionSection{
+    color: white;
+}
+
+.titleFAQSection{
+    color: #000;
+}
+
+
+.titleMediaSection{
+    color:black;
+    text-align: left;
+}
+
+/* --------------------------------contentBlock-------------------------------- */
 .contentBlock {
     padding: 0 2rem;
 }

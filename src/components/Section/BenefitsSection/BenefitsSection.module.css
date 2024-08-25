@@ -1,65 +1,27 @@
-.titleDesc{
-    /* border: 1px solid purple; */
-    margin: 20px 0px;
-    padding: 0px 60px;
+.benefitsSection {
     color: #6e0d0a;
-    /* flex: 1; */
-}
-/* 
-h2{
-    font-weight: bold;
-    font-size: 34px;
-    margin-bottom: 50px;
-}
-
-p{
-    font-size: 18px;
-    text-align: justify;
-    margin: 40px 0px;
-    line-height: 25px;
-} */
-
-.boxes{
-    /* border: 1px solid blue; */
-    /* width: 50%; */
     display: flex;
-    /* flex: 1; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.benefitsSection>div{
+    display: flex;
+}
+
+.benefitsSection>div>div>div>p{
+    margin: 20px 0;
+    width: 85%;
+    font-size: 20px; 
+    /* A fonte anterior era 18, mas estamos pensando em mudar para 20 de toda página
+    porém o container está quebrando */
+}
+
+.boxesGroupIcons{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* section{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFE5D8;
-    position: relative;
-} */
-
-.benefitsSection{
-    /* border: 2px solid pink; */
-    display: flex;
-    flex-direction: row;
-    margin: 150px 50px;
-}
-
-.containerDentro{
-    /* border: 3px solid rgb(6, 216, 143); */
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.libelula{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: url('/public/Images/Layer_1-2.png');
-    background-size: contain;
-    bottom: 0;
-    left: 0;
-}

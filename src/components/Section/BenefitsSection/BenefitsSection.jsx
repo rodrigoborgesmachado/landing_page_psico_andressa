@@ -33,17 +33,17 @@ function BenefitsSection() {
 	  ]
 
 	return (
-		<section>
-			<div className={css.benefitsSection}>
-				<div className={css.containerDentro}>
-					<div className={css.titleDesc}>
-						<Title title={'Como a Terapia Ajuda'} style={'titleDefault'}/>
+		<section className={css.benefitsSection}>
+			<div >
+				<div>
+					<div>
+						<Title title={'Como a Terapia Ajuda'} style={'titleBenefitsSection'}/>
 						<p>O processo terapêutico permite explorar e compreender melhor seus pensamentos e comportamentos, desenvolvendo estratégias eficazes para enfrentar desafios.</p>
 						<p>Você terá um espaço seguro para expressar suas preocupações e melhorar a qualidade de seus relacionamentos, resultando em uma vida mais equilibrada e satisfatória.</p>
 					</div>
 				</div>
-				<div className={css.containerDentro}>
-					<div className={css.boxes}>
+				<div>
+					<div className={css.boxesGroupIcons}>
 						{subtitleImage.map((item, index) => (
 							<CircleImageAndTitle
 								key={index} 
@@ -53,9 +53,7 @@ function BenefitsSection() {
 						))}
 					</div>
 				</div>
-			</div>
-			<div className={css.libelula}></div>
-			
+			</div>		
 		</section>
 	);
 }
