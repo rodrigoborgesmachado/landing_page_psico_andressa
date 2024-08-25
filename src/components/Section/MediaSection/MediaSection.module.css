@@ -1,0 +1,11 @@
+.mediaSection {
+    color: #6e0d0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(248, 232, 188, 1);
+}
+
+.mediaSection>div>div>div>p{
+    color: black;
+}
