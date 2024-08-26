@@ -7,7 +7,6 @@ import CardPublication from '../CardPublication/CardPublication.jsx';
 function PublicationAPI() {
 
 	const [pulications, setPublications] = useState([])
-	const link = "https://www.instagram.com/psiandressaa/"
 
 	async function getData() {
 
@@ -29,7 +28,7 @@ function PublicationAPI() {
 				pulications.map((item, index) => (
 					<CardPublication
 						key={index}
-						link={link}
+						link={item.link}
 						image={item.capa}
 						title={item.titulo}
 						description={item.descricao}
