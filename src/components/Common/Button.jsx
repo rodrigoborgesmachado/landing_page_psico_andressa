@@ -1,10 +1,11 @@
+import React from 'react';
 import styles from './css/Common.module.css';
 
-function Button({ name, path }) {
+function Button({ name, path, onClick }) {
     return (
-        <a href={path}>
-            <input type="button" value={name} className={styles.button} />
-        </a>
+        <button onClick={onClick} className={styles.button}>
+            {name}
+        </button>
     );
 }
 

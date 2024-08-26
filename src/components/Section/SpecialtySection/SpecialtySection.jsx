@@ -1,6 +1,6 @@
 import Button from "./../../Common/Button";
-import ContentBoxGrid from "./ContentBoxGrid";
 import Title from "./../../Common/Title";
+import ContentBoxGrid from "./ContentBoxGrid";
 import styles from './SpecialtySection.module.css';
 
 function SpecialtySection() {
