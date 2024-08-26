@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './ModalFormSection.module.css';
 
 function ModalFormSection({ isOpen, onClose }) {
-    console.log('ModalFormSection rendered with isOpen:', isOpen);
     if (!isOpen) return null;
 
     return (
@@ -12,9 +11,7 @@ function ModalFormSection({ isOpen, onClose }) {
                     &times;
                 </button>
                 <div className={styles.modalContent}>
-                    <div className={styles.imageContainer}>
-                        <img src="your-image-url.jpg" alt="Imagem descritiva" />
-                    </div>
+                    <div className={styles.imageContainer}></div> {/* A imagem será definida no CSS */}
                     <div className={styles.formContainer}>
                         <h2>Entre em contato</h2>
                         <form>

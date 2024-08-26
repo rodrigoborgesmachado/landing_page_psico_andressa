@@ -1,9 +1,23 @@
+import React, { useState } from 'react';
+import ModalFormSection from '../ModalFormSection/ModalFormSection';
 import Button from "./../../Common/Button";
 import Title from "./../../Common/Title";
 import ContentBoxGrid from "./ContentBoxGrid";
 import styles from './SpecialtySection.module.css';
 
 function SpecialtySection() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        console.log('openModal called');
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        console.log('closeModal called');
+        setIsModalOpen(false);
+    };
+
     const boxContents = [
         { id: 1, image: "images/specialty01.svg", imageDescription: "Imagem representando psicoterapia", title: "Psicoterapia", description: "Atendimento individualizado para desenvolver a autoestima, autoconhecimento e saúde mental." },
         { id: 2, image: "images/specialty02.svg", imageDescription: "Imagem representando cursos e palestras", title: "Cursos e Palestras", description: "Encontros presenciais e online para aprofundar temas relacionados ao desenvolvimento pessoal." },
@@ -14,7 +28,8 @@ function SpecialtySection() {
         <section className={styles.specialtySection}>
             <Title title="Minha especialidade" style='titleDefault'/>
             <ContentBoxGrid boxContents={boxContents} />
-            <Button name="Para Você ou Sua Empresa" />
+            <Button name="Para Você ou Sua Empresa" onClick={openModal} />
+            <ModalFormSection isOpen={isModalOpen} onClose={closeModal} />
         </section>
     );
 }
