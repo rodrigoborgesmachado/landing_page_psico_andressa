@@ -1,6 +1,6 @@
 import React from 'react';
-import css from './MediaSection.module.css'
 import Title from '../../Common/Title';
+import css from './MediaSection.module.css';
 import PublicationAPI from './PublicationAPI/PublicationAPI';
 
 function MediaSection() {

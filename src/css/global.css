@@ -14,3 +14,8 @@ section {
 section > div {
     width: 75rem;
 }
+
+/* No seu arquivo CSS global (e.g., styles.css ou App.css) */
+.no-scroll {
+    overflow: hidden;
+}

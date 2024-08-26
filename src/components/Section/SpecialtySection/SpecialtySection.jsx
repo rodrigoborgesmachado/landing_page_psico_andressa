@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ModalFormSection from '../ModalFormSection/ModalFormSection';
 import Button from "./../../Common/Button";
 import Title from "./../../Common/Title";
@@ -8,13 +8,19 @@ import styles from './SpecialtySection.module.css';
 function SpecialtySection() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isModalOpen]);
+
     const openModal = () => {
-        console.log('openModal called');
         setIsModalOpen(true);
     };
 
     const closeModal = () => {
-        console.log('closeModal called');
         setIsModalOpen(false);
     };
 

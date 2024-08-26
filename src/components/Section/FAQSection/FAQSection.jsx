@@ -23,7 +23,7 @@ function FAQSection() {
     return (
         <section className={styles.faqSection}>
             <div>
-                <Title title={'Perguntas Comuns, Respostas Úteis'} style={styles.titleFAQSection} />
+                <Title title="Perguntas Comuns, Respostas Úteis" style={styles.titleFAQSection} />
                 {perguntas.map((item, index) => (
                     <div
                         className={`${styles.faqDetails} ${openIndex === index ? styles.faqDetailsOpen : ''}`}
