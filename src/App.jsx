@@ -1,4 +1,5 @@
 import Footer from './components/Footer/Footer'
+import AboutMeSection from './components/Section/AboutMeSection/AboutMeSection'
 import BenefitsSection from './components/Section/BenefitsSection/BenefitsSection'
 import FAQSection from './components/Section/FAQSection/FAQSection'
 import MediaSection from './components/Section/MediaSection/MediaSection'
@@ -13,6 +14,7 @@ function App() {
     <>
     <SpecialtySection/>
     <BenefitsSection/>
+    <AboutMeSection/>
     <RetentionSection/>
     <FAQSection/>
     <MediaSection/>
