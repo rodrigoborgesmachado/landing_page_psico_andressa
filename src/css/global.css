@@ -12,7 +12,7 @@ section {
 }
 
 section > div {
-    width: 75rem;
+    width: 75rem o !important;
 }
 
 /* No seu arquivo CSS global (e.g., styles.css ou App.css) */

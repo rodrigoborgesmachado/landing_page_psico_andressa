@@ -21,6 +21,14 @@
     transform: scale(0.95);
 }
 
+.homeButton {
+    background-color: #64090E;
+}
+
+.homeButton:hover {
+    background-color: #6E090E;
+}
+
 /* --------------------------------Title-------------------------------- */
 
 .titleDefault {
