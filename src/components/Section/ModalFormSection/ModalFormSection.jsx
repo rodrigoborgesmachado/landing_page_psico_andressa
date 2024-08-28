@@ -1,12 +1,22 @@
 import emailjs from '@emailjs/browser';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ModalFormSection.module.css';
 
 function ModalFormSection({ isOpen, onClose }) {
     const [form, setForm] = useState({ name: '', phone1: '', email: '', message: '' });
-    const [errors, setErrors] = useState({ name: '', phone1: '', email: '' });
+    const [errors, setErrors] = useState({ name: '', phone1: '', email: '', message: '' });
     const [generalErrorMessage, setGeneralErrorMessage] = useState(''); // Estado para mensagem de erro geral
     const [successMessage, setSuccessMessage] = useState(''); // Estado para mensagem de sucesso
+
+    // Limpa o formulário e as mensagens ao fechar o modal
+    useEffect(() => {
+        if (!isOpen) {
+            setForm({ name: '', phone1: '', email: '', message: '' });
+            setErrors({ name: '', phone1: '', email: '', message: '' });
+            setGeneralErrorMessage('');
+            setSuccessMessage('');
+        }
+    }, [isOpen]);
 
     if (!isOpen) return null;
 
@@ -91,49 +101,59 @@ function ModalFormSection({ isOpen, onClose }) {
                         <form onSubmit={handleSubmit}>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="name">Nome:</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder=""
-                                    value={form.name}
-                                    onChange={handleInputChange}
-                                />
-                                {errors.name && <span className={styles.error}>{errors.name}</span>}
+                                <div className={styles.inputWithError}>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder=""
+                                        value={form.name}
+                                        onChange={handleInputChange}
+                                    />
+                                    <span className={`${styles.error} ${errors.name ? styles.visible : ''}`}>{errors.name}</span>
+                                </div>
                             </div>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="phone1">Celular:</label>
-                                <input
-                                    type="text"
-                                    id="phone1"
-                                    name="phone1"
-                                    placeholder=""
-                                    value={form.phone1}
-                                    onChange={handleInputChange}
-                                />
-                                {errors.phone1 && <span className={styles.error}>{errors.phone1}</span>}
+                                <div className={styles.inputWithError}>
+                                    <input
+                                        type="text"
+                                        id="phone1"
+                                        name="phone1"
+                                        placeholder=""
+                                        value={form.phone1}
+                                        onChange={handleInputChange}
+                                    />
+                                    <span className={`${styles.error} ${errors.phone1 ? styles.visible : ''}`}>{errors.phone1}</span>
+                                </div>
                             </div>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="email">E-mail:</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder=""
-                                    value={form.email}
-                                    onChange={handleInputChange}
-                                />
-                                {errors.email && <span className={styles.error}>{errors.email}</span>}
+                                <div className={styles.inputWithError}>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder=""
+                                        value={form.email}
+                                        onChange={handleInputChange}
+                                    />
+                                    <span className={`${styles.error} ${errors.email ? styles.visible : ''}`}>{errors.email}</span>
+                                </div>
                             </div>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="message">Mensagem:</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    placeholder="Olá, tudo bem? Gostaria de agendar uma consulta"
-                                    value={form.message}
-                                    onChange={handleInputChange}
-                                ></textarea>
+                                <div className={styles.inputWithError}>
+                                    <input
+                                        type="text"
+                                        id="message"
+                                        name="message"
+                                        placeholder=""
+                                        value={form.message}
+                                        onChange={handleInputChange}
+                                    />
+                                    <span className={`${styles.error} ${errors.message ? styles.visible : ''}`}>{errors.message}</span>
+                                </div>
                             </div>
                             {successMessage && <div className={styles.successMessage}>{successMessage}</div>}
                             {generalErrorMessage && <div className={styles.errorMessage}>{generalErrorMessage}</div>}
