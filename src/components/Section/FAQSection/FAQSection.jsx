@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Title from '../../Common/Title';
-import styles from './FaqSection.module.css';
+import styles from './FAQSection.module.css';
 import './../../Common/css/Common.module.css';
 
 function FAQSection() {
