@@ -37,7 +37,7 @@
     min-height: 50px;
 }
 
-.retentionSection input[type="button"] {
+/* .retentionSection input[type="button"] {
     background: linear-gradient(135deg, #ffffff, #f4f4f4);
     color: #6e0d0a;
     border: none;
@@ -55,7 +55,7 @@
     font-size: 1.2em;
     transform: translateY(-6px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .flower {
     position: absolute;

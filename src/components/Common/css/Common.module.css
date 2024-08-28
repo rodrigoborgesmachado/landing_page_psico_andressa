@@ -6,15 +6,25 @@
     padding: 12px 24px;
     border: none;
     border-radius: 12px;
-    font-size: 1.4rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.retentionSectionButton{
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    color: #6e0d0a;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-    background-color: #3e2919;
-    transition: all .2s;
+    background: linear-gradient(135deg, #8C3F0F, #F0B24A);
+    color: #FFFFFF; /* Mantém a cor do texto branca */
+    font-size: 1.2em;
+    transform: translateY(-6px);
 }
 
 .button:active {

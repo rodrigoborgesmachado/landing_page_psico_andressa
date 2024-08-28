@@ -1,3 +1,4 @@
+import Button from '../../Common/Button';
 import Title from '../../Common/Title';
 import styles from './RetentionSection.module.css';
 
@@ -14,7 +15,8 @@ function RetentionSection() {
 					Aprenda a se comunicar de forma assertiva, trabalhe conflitos internos e em seus relacionamentos, e encontre mais sentido e qualidade de vida. O processo terapêutico oferece um espaço acolhedor e seguro para você se conhecer melhor e crescer. Vamos começar essa jornada juntas?
 				</p>
 				<form action="">
-					<input type="button" value="Entre em contato por e-mail" />
+					<Button name="Entre em contato por e-mail" style="retentionSectionButton" />
+					{/* <input type="button" value="Entre em contato por e-mail" /> */}
 				</form>
 				<div className={`${styles.flower} ${styles['flower-bottom-left']}`}></div>
 				<div className={`${styles.flower} ${styles['flower-top-right']}`}></div>
