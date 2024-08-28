@@ -14,10 +14,11 @@
 }
 
 .modalContainer {
-    background-color: #f8f4ec;
+    background-color: rgba(255, 255, 255, 0.88);
     border-radius: 10px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    width: 60%;
+    width: 70%;
+    height: 80%;
     max-width: 900px;
     display: flex;
     padding: 20px;
@@ -33,19 +34,20 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #000; /* Certifica que o botão de fechar é visível em ambas as seções */
+    color: #000;
 }
 
 .modalContent {
     display: flex;
-    flex-direction: row; /* Mantém a diagramação em duas colunas */
+    flex-direction: row;
     width: 100%;
-    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: flex-start;
 }
 
 .imageContainer {
-    width: 40%; /* Ajuste o tamanho conforme necessário */
-    background-image: url('path/to/your-image.jpg'); /* Defina o caminho da imagem aqui */
+    height: 100%;
+    width: 40%;
+    background-image: url('../../../../public/images/modalimg.svg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -54,12 +56,13 @@
 .formContainer {
     flex: 1;
     margin-left: 20px;
-    width: 60%; /* Ajusta a largura da coluna do formulário */
+    width: 60%;
+    max-width: 500px;
 }
 
 .formContainer h2 {
-    text-align: left;
-    color: #000; /* Certifica que o título seja consistente e legível */
+    text-align: center;
+    color: #64090e;
 }
 
 .inputGroup {
@@ -71,32 +74,68 @@
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333; /* Certifica contraste adequado */
-    text-align: left; /* Alinha os labels sempre à esquerda */
+    color: #333;
+    text-align: left;
 }
 
 .inputGroup input,
 .inputGroup textarea {
     width: 100%;
+    max-width: 400px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    background-color: #fff; /* Fundo branco para legibilidade */
-    color: #000; /* Cor do texto consistente */
-    text-align: left; /* Certifica que o texto nos inputs também fica alinhado à esquerda */
+    background-color: #ffe5d8;
+    color: #000;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .submitButton {
+    max-width: 400px; /* Largura fixa máxima para o botão */
     background-color: #8a0303;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%; /* Botão ocupa a largura completa */
+    width: 20%; /* Garante que o botão tenha o mesmo tamanho dos campos de entrada */
+    box-sizing: border-box;
 }
 
 .submitButton:hover {
     background-color: #6e0202;
+}
+
+/* Estilos para as mensagens de sucesso e erro */
+.successMessage {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #3c763d;
+    text-align: center;
+    font-weight: bold;
+}
+
+.errorMessage {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #a94442;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para os erros específicos nos campos */
+.inputGroup .error {
+    color: #a94442;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
 }
