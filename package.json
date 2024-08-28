@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "axios": "^1.7.5",
+    "email-js": "^2.0.3",
     "emailjs": "^4.0.3",
     "psicologa_andressa": "file:",
     "react": "^18.3.1",

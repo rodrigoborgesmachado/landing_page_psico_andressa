@@ -3,13 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.aboutMeSection > div {
-    width: 75rem;
-}
-
+}   
 
 .aboutMeSection > div > div {
     display: flex;

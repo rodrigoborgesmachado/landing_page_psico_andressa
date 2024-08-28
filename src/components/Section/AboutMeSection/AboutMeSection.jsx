@@ -15,23 +15,23 @@ function AboutMeSection() {
     return (
         <section className={styles.aboutMeSection}>
             <div>
-                <Title title={'Sobre Minha Jornada'}/>
+                <Title title={'Sobre Minha Jornada'} />
                 <div>
                     <div>
-                        <ContentBlock title={boxTopicos[0].title} description={boxTopicos[0].description} />
-                        <ContentBlock title={boxTopicos[1].title} description={boxTopicos[1].description} />
+                        <ContentBlock title={boxTopicos[0].title} description={boxTopicos[0].description} style="aboutMeContent" />
+                        <ContentBlock title={boxTopicos[1].title} description={boxTopicos[1].description} style="aboutMeContent" />
                     </div>
                     <div className={styles.boxImages}>
                         <img src="images/andressa1.svg" alt="Foto da Psicolaga Andressa em um auditório" />
                         <img src="images/andressa2.svg" alt="Foto da Psicolaga Andressa" />
                     </div>
                     <div>
-                    <ContentBlock title={boxTopicos[2].title} description={boxTopicos[2].description} />
-                    <ContentBlock title={boxTopicos[3].title} description={boxTopicos[3].description} />
+                        <ContentBlock title={boxTopicos[2].title} description={boxTopicos[2].description} style="aboutMeContent" />
+                        <ContentBlock title={boxTopicos[3].title} description={boxTopicos[3].description} style="aboutMeContent" />
                     </div>
                 </div>
                 <div className={styles.centralizedContent}>
-                <ContentBlock title={boxTopicos[4].title} description={boxTopicos[4].description} />
+                    <ContentBlock title={boxTopicos[4].title} description={boxTopicos[4].description} style="aboutMeContent" />
                 </div>
             </div>
         </section>
