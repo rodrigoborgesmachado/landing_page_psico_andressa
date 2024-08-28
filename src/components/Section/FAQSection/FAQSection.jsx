@@ -22,6 +22,7 @@ function FAQSection() {
 
     return (
         <section className={styles.faqSection}>
+            <div className={styles.faqImage}></div>
             <div>
                 <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
                 {perguntas.map((item, index) => (
