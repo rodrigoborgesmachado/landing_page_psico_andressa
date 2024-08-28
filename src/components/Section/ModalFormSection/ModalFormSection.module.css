@@ -1,3 +1,5 @@
+/* ModalFormSection.module.css */
+
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -31,11 +33,14 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: #000; /* Certifica que o botão de fechar é visível em ambas as seções */
 }
 
 .modalContent {
     display: flex;
+    flex-direction: row; /* Mantém a diagramação em duas colunas */
     width: 100%;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
 }
 
 .imageContainer {
@@ -49,16 +54,25 @@
 .formContainer {
     flex: 1;
     margin-left: 20px;
+    width: 60%; /* Ajusta a largura da coluna do formulário */
+}
+
+.formContainer h2 {
+    text-align: left;
+    color: #000; /* Certifica que o título seja consistente e legível */
 }
 
 .inputGroup {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .inputGroup label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #333; /* Certifica contraste adequado */
+    text-align: left; /* Alinha os labels sempre à esquerda */
 }
 
 .inputGroup input,
@@ -67,6 +81,9 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #fff; /* Fundo branco para legibilidade */
+    color: #000; /* Cor do texto consistente */
+    text-align: left; /* Certifica que o texto nos inputs também fica alinhado à esquerda */
 }
 
 .submitButton {
@@ -77,6 +94,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* Botão ocupa a largura completa */
 }
 
 .submitButton:hover {

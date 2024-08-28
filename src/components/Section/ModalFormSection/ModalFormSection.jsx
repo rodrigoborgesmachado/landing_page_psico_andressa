@@ -17,15 +17,15 @@ function ModalFormSection({ isOpen, onClose }) {
                         <form>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="name">Nome:</label>
-                                <input type="text" id="name" name="name" placeholder="Fulano de tal" />
+                                <input type="text" id="name" name="name" placeholder="" />
                             </div>
                             <div className={styles.inputGroup}>
-                                <label htmlFor="phone1">Telefone:</label>
-                                <input type="text" id="phone1" name="phone1" placeholder="34 3232 3232" />
+                                <label htmlFor="phone1">Celular:</label>
+                                <input type="text" id="phone1" name="phone1" placeholder="" />
                             </div>
                             <div className={styles.inputGroup}>
-                                <label htmlFor="phone2">Telefone:</label>
-                                <input type="text" id="phone2" name="phone2" placeholder="Outro telefone (opcional)" />
+                                <label htmlFor="email">E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="" />
                             </div>
                             <div className={styles.inputGroup}>
                                 <label htmlFor="message">Mensagem:</label>
