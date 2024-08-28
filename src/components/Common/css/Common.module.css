@@ -21,7 +21,8 @@
 }
 
 .button:hover {
-    background: linear-gradient(135deg, #8C3F0F, #F0B24A);
+    background: linear-gradient(150deg, #6e0d0a, #000000);
+    opacity: 84%;
     color: #FFFFFF; /* Mantém a cor do texto branca */
     font-size: 1.2em;
     transform: translateY(-6px);
