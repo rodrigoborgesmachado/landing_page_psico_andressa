@@ -16,7 +16,6 @@ function RetentionSection() {
 				</p>
 				<form action="">
 					<Button name="Entre em contato por e-mail" style="retentionSectionButton" />
-					{/* <input type="button" value="Entre em contato por e-mail" /> */}
 				</form>
 				<div className={`${styles.flower} ${styles['flower-bottom-left']}`}></div>
 				<div className={`${styles.flower} ${styles['flower-top-right']}`}></div>
