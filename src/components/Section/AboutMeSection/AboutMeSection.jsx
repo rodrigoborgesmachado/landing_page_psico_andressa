@@ -1,4 +1,3 @@
-import React from 'react';
 import Title from '../../Common/Title';
 import styles from './AboutMeSection.module.css';
 import ContentBlock from '../../Common/ContentBlock';

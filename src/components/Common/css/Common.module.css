@@ -45,7 +45,7 @@
 .titleDefault {
     color: #5b3923;
     font-size: 2rem;
-    margin-bottom: 5.4375rem;
+    margin-bottom: 3.4375rem;
     text-align: center;
     margin-top: 0.5625rem;
 }
@@ -90,4 +90,12 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 5.0625rem;
+}
+
+.aboutMeContent h3 {
+    margin-top: 0.5rem;
+}
+
+.aboutMeContent p {
+    margin-bottom: 0rem;
 }

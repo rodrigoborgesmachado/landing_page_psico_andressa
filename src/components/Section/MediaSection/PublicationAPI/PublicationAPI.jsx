@@ -1,7 +1,7 @@
 import css from './PublicationAPI.module.css'
 import api from '../../../../service/api.js'
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CardPublication from '../CardPublication/CardPublication.jsx';
 
 function PublicationAPI() {

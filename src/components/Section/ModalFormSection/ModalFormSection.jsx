@@ -1,8 +1,16 @@
 import emailjs from '@emailjs/browser';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './ModalFormSection.module.css';
 
+import PropTypes from 'prop-types';
+
 function ModalFormSection({ isOpen, onClose }) {
+
+    ModalFormSection.propTypes = {
+        isOpen: PropTypes.bool.isRequired,
+        onClose: PropTypes.func.isRequired,
+    };
+    
     const [form, setForm] = useState({ name: '', phone1: '', email: '', message: '' });
     const [errors, setErrors] = useState({ name: '', phone1: '', email: '', message: '' });
     const [generalErrorMessage, setGeneralErrorMessage] = useState(''); // Estado para mensagem de erro geral

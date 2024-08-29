@@ -1,4 +1,3 @@
-import React from 'react';
 import Title from '../../Common/Title';
 import css from './MediaSection.module.css';
 import PublicationAPI from './PublicationAPI/PublicationAPI';

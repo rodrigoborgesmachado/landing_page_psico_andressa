@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from "../../Common/Button";
 import ModalFormSection from '../ModalFormSection/ModalFormSection';
 import styles from "./HomeSection.module.css";

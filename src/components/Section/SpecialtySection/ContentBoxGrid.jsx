@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './SpecialtySection.module.css';
 import ContentBox from "./ContentBox";
 
@@ -15,5 +16,9 @@ function ContentBoxGrid({ boxContents }) {
         </div>
     );
 }
+
+ContentBoxGrid.propTypes = {
+    boxContents: PropTypes.array.isRequired
+};
 
 export default ContentBoxGrid;

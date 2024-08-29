@@ -1,8 +1,15 @@
-import css from './CardPublication.module.css'
+import css from './CardPublication.module.css';
+import PropTypes from 'prop-types';
 
-import React from 'react';
-
+// eslint-disable-next-line no-unused-vars
 function CardPublication({link, image, title, description}) {
+
+	CardPublication.propTypes = {
+		link: PropTypes.string.isRequired,
+		image: PropTypes.string.isRequired,
+		title: PropTypes.string.isRequired,
+		description: PropTypes.string.isRequired
+	};
 
 	return (
 		<div className={css.cardPubli}>
