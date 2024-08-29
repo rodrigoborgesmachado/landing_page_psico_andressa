@@ -12,7 +12,7 @@
 }
 
 .modalContainer {
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     width: 80%;
@@ -43,7 +43,7 @@
     flex: 1;
     flex-direction: row;
     align-items: stretch; /* Alinha a altura da imagem e do formulário */
-    border: 1px solid green;
+
 }
 
 .imageContainer {
@@ -63,7 +63,7 @@
     padding: 10% 15%; 
     width: 100%; /* Garante que o formulário ocupe toda a largura disponível */
     max-width: 800px; /* Define uma largura máxima para o formulário */
-    border: 1px solid blue;
+
 }
 
 .formContainer h2 {
@@ -71,7 +71,7 @@
     text-align: center;
     color: #64090e;
     margin-bottom: 50px;
-    border: 1px solid yellow;
+
 }
 
 .inputGroup {
@@ -80,7 +80,7 @@
     width: 90%; /* Garante que o grupo de input ocupe toda a largura do formulário */
     margin-bottom: 20px;
     flex-wrap: nowrap; /* Impede que os elementos dentro do grupo se quebrem em múltiplas linhas */
-    border: 1px solid red;
+
 }
 
 .inputGroup label {
@@ -98,7 +98,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 1px solid black;
+
 }
 
 .inputWithError input    {
