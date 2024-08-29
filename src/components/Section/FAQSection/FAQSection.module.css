@@ -13,7 +13,7 @@
 .faqImage {
   width: 100%;
   height: 150px; /* Altura da imagem */
-  background: url('../../../../public/images/paralaxFaq.svg') no-repeat center top; /* Insira o caminho correto para sua imagem aqui */
+  background: url('/images/paralaxFaq.svg') no-repeat center top; /* Insira o caminho correto para sua imagem aqui */
   background-size: cover;
   position: absolute;
   top: 0;

@@ -15,9 +15,9 @@
     background-color: rgba(255, 255, 255, 0.88);
     border-radius: 10px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    width: 70%;
+    width: 80%;
     height: 80%;
-    max-width: 900px;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -35,7 +35,7 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #000;
+    color:#64090e ;
 }
 
 .modalContent {
@@ -43,13 +43,14 @@
     flex: 1;
     flex-direction: row;
     align-items: stretch; /* Alinha a altura da imagem e do formulário */
+    border: 1px solid green;
 }
 
 .imageContainer {
-    flex: 0 0 40%; /* A imagem ocupa 40% do container */
+    flex: 0 0 30%; /* A imagem ocupa 40% do container */
     background-image: url('/images/modalimg.svg');
-    background-size: cover;
-    background-position: center;
+    background-size:auto;
+    background-position: left;
     border-radius: 10px 0 0 10px;
 }
 
@@ -59,40 +60,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 40px; /* Aumentei o padding na direita para dar mais espaço */
+    padding: 10% 15%; 
     width: 100%; /* Garante que o formulário ocupe toda a largura disponível */
     max-width: 800px; /* Define uma largura máxima para o formulário */
+    border: 1px solid blue;
 }
 
 .formContainer h2 {
     width: 100%;
     text-align: center;
     color: #64090e;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    border: 1px solid yellow;
 }
 
 .inputGroup {
     display: flex;
     align-items: center;
-    width: 100%; /* Garante que o grupo de input ocupe toda a largura do formulário */
-    margin-bottom: 15px;
+    width: 90%; /* Garante que o grupo de input ocupe toda a largura do formulário */
+    margin-bottom: 20px;
     flex-wrap: nowrap; /* Impede que os elementos dentro do grupo se quebrem em múltiplas linhas */
+    border: 1px solid red;
 }
 
 .inputGroup label {
     width: 30%; /* A label ocupa 60% do espaço */
     font-weight: bold;
     color: #333;
-    text-align: right;
-    margin-right: 10px;
+    text-align:right;
+    margin-right: 25px;
+    margin-top: 0px;
 }
 
 /* Adicionando a classe para alinhar input e erro em coluna */
 .inputWithError {
-    width: 40vh; /* Define a largura dos inputs para ocupar o espaço restante */
+    width: 60vh; /* Define a largura dos inputs para ocupar o espaço restante */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 .inputWithError input    {
