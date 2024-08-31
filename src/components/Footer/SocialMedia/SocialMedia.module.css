@@ -1,7 +1,7 @@
 .containerFooterMedia{
     width: 50px;
     height: 50px;
-    margin: 10px;
+    margin: 15px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -9,7 +9,21 @@
 }
 
 .containerFooterMedia img{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     /* border: 1px solid green; */
+}
+
+@media screen and (min-width: 1025px){
+
+    .containerFooterMedia{
+        margin: 10px;
+        /* border: 1px solid red; */
+    }
+    
+    .containerFooterMedia img{
+        width: 30px;
+        height: 30px;
+        /* border: 1px solid green; */
+    }
 }
