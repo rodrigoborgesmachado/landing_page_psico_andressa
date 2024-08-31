@@ -16,10 +16,11 @@ function CardPublication({link, image, title, description}) {
 			<a href={link} target="_blank" rel="noopener noreferrer">
 				<div className={css.card}>
 					<img src={image} alt="" className={css.imageCard}/>
-					{/* <div className={css.cardWrapper}>
+					<div className={css.cardWrapper}>
 						<h3>{title}</h3>
 						<p>Leia mais</p>
-					</div> */}
+						<img src='/icons/insta_red.png' alt="instagram" className={css.insta}/>
+					</div>
 				</div> 
 			</a>
 			{/* <div>
