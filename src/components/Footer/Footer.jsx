@@ -5,17 +5,17 @@ function Footer() {
 
     const infoSocialMedia = [
         {
-            image:"/footer/instagram.png",
+            image:"/icons/instagram.png",
             link:"https://www.instagram.com/psiandressaa/",
             descricao:"Icone instagram"
         }, 
         {
-            image:"/footer/linkedin.png",
+            image:"/icons/linkedin.png",
             link:"https://www.linkedin.com/in/andressa-borges-machado-b843691a3/",
             descricao:"Icone linkedin"
         },
         {
-            image:"/footer/ebook.png",
+            image:"/icons/ebook.png",
             link:"https://hotmart.com/pt-br/marketplace/produtos/autoestima-e-vida/A88644031R",
             descricao:"Icone ebook"
         }
@@ -23,8 +23,10 @@ function Footer() {
 
     return (
         <footer className={css.footer}>
-            <div className={css.footerTop}></div>
-            <div>
+            <div className={css.footerTop}>
+                <img src="/icons/fundo_footer.png" alt="arredondado" className={css.footerImage} />
+            </div>
+            <div className={css.footerContent}>
                 <div>
                     {infoSocialMedia.map((item, index) => (
                         <SocialMedia
@@ -36,7 +38,7 @@ function Footer() {
                     ))}
                 </div>
                 <div>
-                    <img src="/footer/logo_footer.png" alt="Logo psicologa" />
+                    <img src="/icons/logo_footer.png" alt="Logo psicologa" />
                 </div>
                 <div>
                     <ol>
