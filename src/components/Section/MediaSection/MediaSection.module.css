@@ -38,8 +38,7 @@
 
 .mediaContent>div:nth-child(1){
     /* border: 1px solid green; */
-    /* padding: 10px; */
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .mediaContent>div:nth-child(1)>p{
