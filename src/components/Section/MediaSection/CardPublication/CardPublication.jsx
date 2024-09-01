@@ -23,10 +23,6 @@ function CardPublication({link, image, title, description}) {
 					</div>
 				</div> 
 			</a>
-			{/* <div>
-				
-				<p>{description}</p>
-			</div> */}
 		</div>
 	);
 }

@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-top: 0px;
     background-color: rgba(248, 232, 188, 1);
-    /* border: 2px solid rgb(199, 78, 17); */
+    border: 2px solid rgb(199, 78, 17);
 }
 
 .mediaTop {
@@ -11,33 +11,29 @@
     align-items: center; 
     justify-content: center;
     margin-bottom: 0; 
-    width: 100%; 
+    width: 100% !important; 
 }
 
 .mediaContent {
-    width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
+    flex-direction: column;
     align-items: center;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     padding: 50px;
 }
 
 .mediaImage {
-    width: 100%; 
+    width: 100% !important; 
     height: auto; 
 }
 
 .mediaContent>div{
     flex-direction: column;
-    width: 60%;
-    /* border: 2px solid purple; */
 }
 
 .mediaContent>div:nth-child(1){
-    /* border: 1px solid green; */
     margin-right: 80px;
 }
 
@@ -46,14 +42,70 @@
 }
 
 .mediaContent>div:nth-child(2){
-    /* border: 1px solid yellow; */
-    margin: 10px;
-    width: 85%;
+    margin: 32px;
+    width: 50%;
 }
 
-.publications{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} 
+@media screen and (min-width: 1025px){
+    
+    .mediaSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        background-color: rgba(248, 232, 188, 1);
+        /* border: 2px solid rgb(199, 78, 17); */
+    }
+    
+    .mediaTop {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 0; 
+        width: 100%; 
+    }
+    
+    .mediaContent {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: center;
+        /* border: 1px solid blue; */
+        padding: 50px;
+    }
+    
+    .mediaImage {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .mediaContent>div{
+        flex-direction: column;
+        width: 60%;
+        /* border: 2px solid purple; */
+    }
+    
+    .mediaContent>div:nth-child(1){
+        /* border: 1px solid green; */
+        margin-right: 80px;
+    }
+    
+    .mediaContent>div:nth-child(1)>p{
+        font-size: 20px; 
+    }
+    
+    .mediaContent>div:nth-child(2){
+        /* border: 1px solid yellow; */
+        margin: 10px;
+        width: 85%;
+    }
+    
+    .publications{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+    
+}
