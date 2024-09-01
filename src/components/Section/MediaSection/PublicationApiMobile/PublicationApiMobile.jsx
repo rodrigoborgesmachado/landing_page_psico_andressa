@@ -11,7 +11,6 @@ register();
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -35,11 +34,17 @@ function PublicationApiMobile() {
 
 	return (
 		<div className={css.allPulicationsMobile}>
-			<Swiper
-				
+			<Swiper 
 				slidesPerView={1}
 				pagination={{ clickable: true }}
 				navigation
+				className="my-swiper-container"
+				style={{
+					'--swiper-navigation-color': '#6e0d0a',
+					'--swiper-pagination-color': '#6e0d0a',
+					'--swiper-pagination-bottom': '-2px',
+					'--swiper-navigation-sides-offset': '-2px',
+				}}
 			>
 				{
 					pulications.map((item, index) => (
@@ -55,20 +60,6 @@ function PublicationApiMobile() {
 				}
 			</Swiper>
 		</div>
-
-		// <div className={css.allPulications}>
-		// 	{
-		// 		pulications.map((item, index) => (
-		// 			<CardPublication
-		// 				key={index}
-		// 				link={item.link}
-		// 				image={item.capa}
-		// 				title={item.titulo}
-		// 				description={item.descricao}
-		// 			/>
-		// 		))
-		// 	}
-		// </div>
 	);
 }
 

@@ -1,16 +1,9 @@
 .allPulications{
-    border: 1px solid green;
+    width: 85%;
     display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    justify-content: center;
     flex-wrap: wrap;
 }
-
-
-@media screen and (min-width: 1025px){
     
-    .allPulications{
-        /* border: 1px solid green; */
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-}

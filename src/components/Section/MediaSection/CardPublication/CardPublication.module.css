@@ -1,16 +1,17 @@
 .imageCard{
-    width: 177px;
-    height: 220px;
+    width: 240px;
+    height: 300px;
     display: block;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
     /* border: 1px solid brown; */
 }
 
 .cardPubli{
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
 
 .card {
@@ -18,9 +19,9 @@
     height: 220px;
     margin: 3rem 0 0 0; */
     margin: 0px;
-    /* display: flex; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* position: relative; */
     color: maroon;
     cursor: pointer;
@@ -66,37 +67,20 @@ a:link {
     .imageCard{
         width: 177px;
         height: 220px;
-        display: block;
-        position: relative;
+        border-radius: 0px;
         z-index: 1;
         /* border: 1px solid brown; */
     }
-    
-    .cardPubli{
-        display: block;
-    }
-    
-    .card {
-        /* width: 177px;
-        height: 220px;
-        margin: 3rem 0 0 0; */
-        margin: 0px;
+
+    .card{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* position: relative; */
-        color: maroon;
-        cursor: pointer;
-        transition: 0.3s;
     }
-    
-    .insta{
-        width: 25px;
-        height: 25px;
-    }
-    
-    a:link {
-        text-decoration: none;
+
+    .cardPubli{
+        width: 177px;
+        margin: 0;
     }
     
     .cardWrapper {

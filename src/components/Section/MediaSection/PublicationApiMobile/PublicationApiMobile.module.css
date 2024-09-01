@@ -1,0 +1,32 @@
+/* 
+.swiper-button-next,
+.swiper-button-prev {
+    color : white
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+} */
+
+@media screen and (max-width: 1024px){
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      color: red !important;
+    }
+
+    
+    .mySwiper{
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    }
+
+    .swiper-wrapper{
+        background-color: red !important;
+    }
+
+    .my-swiper-container .swiper-pagination {
+        bottom: 10px; /* Altere o valor para ajustar a distância dos bullets da imagem */
+      }
+}
