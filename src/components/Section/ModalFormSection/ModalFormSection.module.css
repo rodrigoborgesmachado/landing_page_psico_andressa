@@ -60,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10% 15%; 
+    padding: 8% 15%; 
     width: 100%; /* Garante que o formulário ocupe toda a largura disponível */
     max-width: 800px; /* Define uma largura máxima para o formulário */
 
@@ -70,15 +70,16 @@
     width: 100%;
     text-align: center;
     color: #64090e;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 0px;
 
 }
 
 .inputGroup {
     display: flex;
     align-items: center;
-    width: 90%; /* Garante que o grupo de input ocupe toda a largura do formulário */
-    margin-bottom: 20px;
+    width: 80%; /* Garante que o grupo de input ocupe toda a largura do formulário */
+    margin-bottom: 10px;
     flex-wrap: nowrap; /* Impede que os elementos dentro do grupo se quebrem em múltiplas linhas */
 
 }
@@ -109,7 +110,7 @@
     background-color: #ffe5d8;
     color: #000;
     box-sizing: border-box;
-    height: 40px; /* Define uma altura fixa para os inputs */
+    height: 35px; /* Define uma altura fixa para os inputs */
 }
 
 /* Estilo para os erros específicos nos campos */
