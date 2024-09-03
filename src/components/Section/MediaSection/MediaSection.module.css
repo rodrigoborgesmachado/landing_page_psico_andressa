@@ -38,6 +38,11 @@
     margin-bottom: 20px;
     /* border: 2px solid magenta; */
     padding: 20px;
+    color: #000;
+}
+
+.lastPublications b{
+    color: #2F0202;
 }
 
 .mediaContent>div:nth-child(1)>p{
@@ -115,6 +120,10 @@
         z-index: 2;
         /* border: 2px solid magenta; */
     } 
+
+    .libelulaMedia{
+        display: block;;
+    }
 
     .libelulaMedia>img{
         position: absolute;

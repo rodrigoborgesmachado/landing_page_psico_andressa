@@ -18,7 +18,7 @@ function MediaSection() {
 				<div className={css.lastPublications}>
 					<Title title={'Últimas publicações'} style={'titleMediaSection'}/>
 					{/* <p>Confira as últimas publicações no Instagram e descubra dicas exclusivas para transformar sua autoestima e bem-estar!</p> */}
-					<p>Confira as últimas publicações no Instagram e descubra dicas exclusivas que vão transformar sua autoestima e bem-estar! Inspire-se com conteúdos incríveis, conselhos práticos e histórias motivadoras para você brilhar cada vez mais!</p>
+					<p>Confira as últimas publicações no <b>Instagram</b> e descubra dicas exclusivas que vão transformar sua autoestima e bem-estar! Inspire-se com conteúdos incríveis, conselhos práticos e histórias motivadoras para você brilhar cada vez mais!</p>
 				</div>
 				<div className={css.publications}>
 				{isMobile ? (
