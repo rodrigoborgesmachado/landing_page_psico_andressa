@@ -17,7 +17,8 @@ function MediaSection() {
 			<div className={css.mediaContent}>
 				<div className={css.lastPublications}>
 					<Title title={'Últimas publicações'} style={'titleMediaSection'}/>
-					<p>Confira as últimas publicações no Instagram e descubra dicas exclusivas para transformar sua autoestima e bem-estar!</p>
+					{/* <p>Confira as últimas publicações no Instagram e descubra dicas exclusivas para transformar sua autoestima e bem-estar!</p> */}
+					<p>Confira as últimas publicações no Instagram e descubra dicas exclusivas que vão transformar sua autoestima e bem-estar! Inspire-se com conteúdos incríveis, conselhos práticos e histórias motivadoras para você brilhar cada vez mais!</p>
 				</div>
 				<div className={css.publications}>
 				{isMobile ? (
@@ -26,7 +27,10 @@ function MediaSection() {
       				  <PublicationAPI/> // Renderiza componente desktop
       				)}
 				</div>
-			</div>		
+			</div>	
+			<div className={css.libelulaMedia}>
+				<img src="/icons/Last_Layer_1-2.png" alt="libelula" />
+			</div>	
 		</section>
     );
 }
