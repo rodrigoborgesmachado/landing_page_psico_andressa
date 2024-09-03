@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Title from '../../Common/Title';
-import styles from './FAQSection.module.css';
 import './../../Common/css/Common.module.css';
+import FAQItem from './FAQItem';
+import styles from './FAQSection.module.css';
 
 function FAQSection() {
     const [perguntas, setPerguntas] = useState([]);
@@ -26,23 +27,13 @@ function FAQSection() {
             <div>
                 <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
                 {perguntas.map((item, index) => (
-                    <div
-                        className={`${styles.faqDetails} ${openIndex === index ? styles.faqDetailsOpen : ''}`}
+                    <FAQItem
                         key={index}
-                    >
-                        <summary
-                            className={styles.faqSummary}
-                            onClick={() => handleToggle(index)}
-                        >
-                            <span className={styles.faqSummaryIcon}></span>
-                            {item.pergunta}
-                        </summary>
-                        {openIndex === index && (
-                            <p className={`${styles.faqDetailsContent} ${styles.faqContentOpen}`}>
-                                {item.resposta}
-                            </p>
-                        )}
-                    </div>
+                        index={index}
+                        item={item}
+                        isOpen={openIndex === index}
+                        onToggle={handleToggle}
+                    />
                 ))}
             </div>
         </section>
