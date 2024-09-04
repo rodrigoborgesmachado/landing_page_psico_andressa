@@ -86,6 +86,7 @@
     .footerContent>div:nth-child(3)>ol{
         flex-direction: column;
         border-left: 0.5px solid white;
+        border-bottom: none;
     }
 
     .footerContent>div:nth-child(3)>ol>li{
