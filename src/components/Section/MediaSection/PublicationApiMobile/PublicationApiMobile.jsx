@@ -14,6 +14,8 @@ import 'swiper/css/pagination'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import '../PublicationApiMobile/styleSwiper.css'
+
 function PublicationApiMobile() {
 
 	const [pulications, setPublications] = useState([])
@@ -35,16 +37,11 @@ function PublicationApiMobile() {
 	return (
 		<div className={css.allPulicationsMobile}>
 			<Swiper 
+				cssMode={true}
 				slidesPerView={1}
 				pagination={{ clickable: true }}
 				navigation
-				className="my-swiper-container"
-				style={{
-					'--swiper-navigation-color': '#6e0d0a',
-					'--swiper-pagination-color': '#6e0d0a',
-					'--swiper-pagination-bottom': '-2px',
-					'--swiper-navigation-sides-offset': '-2px',
-				}}
+				className="mySwiper"
 			>
 				{
 					pulications.map((item, index) => (

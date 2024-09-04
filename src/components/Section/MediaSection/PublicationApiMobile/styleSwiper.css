@@ -1,0 +1,22 @@
+.swiper-button-next,
+.swiper-button-prev {
+    color : #6e0d0a;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6e0d0a;
+}
+
+.swiper-slide> img {
+    transition: all;
+}
+
+.swiper-slide>div{
+    /* border: 2px solid green; */
+    height: auto;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 5px;
+}

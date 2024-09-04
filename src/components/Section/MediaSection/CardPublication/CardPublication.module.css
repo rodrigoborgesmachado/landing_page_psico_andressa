@@ -4,7 +4,7 @@
     display: block;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 10px;
     /* border: 1px solid brown; */
 }
 
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: auto;
 }
 
 .card {
@@ -29,8 +30,8 @@
 }
 
 .insta{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 a:link {
@@ -46,13 +47,31 @@ a:link {
     border: 1px solid #ffffff;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.8); /* Cor branca com opacidade de 50% */
-    z-index: 1; /* Coloca o overlay acima da imagem */
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1; 
+}
+
+.cardWrapper p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.cardWrapper img {
+    margin-left: 5px;
+}
+
+.cardWrapper{
+    text-align: center;
+    margin-bottom: 2px;
 }
 
 .cardWrapper p,
-.cardWrapper h3,
-.cardWrapper img {
+.cardWrapper img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cardWrapper h3 {
     font-size: 0;
     visibility: hidden;
     opacity: 0;
