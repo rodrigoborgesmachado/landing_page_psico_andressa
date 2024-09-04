@@ -15,7 +15,7 @@ function Footer() {
             descricao:"Icone linkedin"
         },
         {
-            image:"/icons/book-open.png",
+            image:"/icons/ebook2.png",
             link:"https://hotmart.com/pt-br/marketplace/produtos/autoestima-e-vida/A88644031R",
             descricao:"Icone ebook"
         }
