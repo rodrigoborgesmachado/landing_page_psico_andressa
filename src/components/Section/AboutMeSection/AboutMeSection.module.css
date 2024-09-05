@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .aboutMeSection>div>div {
@@ -12,7 +13,6 @@
 .aboutMeSection>div>div>div:nth-child(1),
 .aboutMeSection>div>div>div:nth-child(3) {
     width: 35%;
-    /* border: 1px solid #59235b; */
     display: flex;
     flex-direction: column;
 
@@ -26,7 +26,7 @@
 
 .aboutMeSection>div>div>div>div {
     margin: 0px;
-    padding: 0px;
+    padding: 8px 0px;
     height: 50%;
 }
 
@@ -60,9 +60,32 @@
     align-items: center;
     text-align: center;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .centralizedContent p {
-
     text-align: left;
+    width: 420px;
+}
+.aboutMeSection p{
+    color: rgba(59, 27, 2, 1);
+
+}
+
+.libelulaAboutMe {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.libelulaAboutMe img:nth-child(1){
+    position: absolute;
+    bottom: 100px;
+    left: 125%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: auto;
+    z-index: 1;
 }

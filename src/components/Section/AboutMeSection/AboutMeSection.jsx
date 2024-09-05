@@ -9,7 +9,7 @@ function AboutMeSection() {
         { id: 2, title: "Abordagem Terapêutica", description: "Combino a psicoterapia com a psicoeducação, utilizando as teorias da Análise Transacional, Psicologia Analítica e Psicanálise, para atuar no desenvolvimento da autonomia do paciente." },
         { id: 3, title: "Diferenciais", description: "Trabalho com uma abordagem dinâmica e personalizada, buscando desenvolver a sua autonomia e focando em um processo fluido, com cada vez menos dependência da psicoterapia para compreender conflitos internos e externos." },
         { id: 4, title: "Experiência", description: "Ministrei palestras e treinamentos na área da saúde, além de atuar com Terapia Sistêmica, o que me possibilitou trabalhar com dinâmicas e padrões familiares." }
-    ]
+    ];
 
     return (
         <section className={styles.aboutMeSection}>
@@ -21,8 +21,8 @@ function AboutMeSection() {
                         <ContentBlock title={boxTopicos[1].title} description={boxTopicos[1].description} style="aboutMeContent" />
                     </div>
                     <div className={styles.boxImages}>
-                        <img src="images/andressa1.svg" alt="Foto da Psicolaga Andressa em um auditório" />
-                        <img src="images/andressa2.svg" alt="Foto da Psicolaga Andressa" />
+                        <img src="images/andressa1.svg" alt="Foto da Psicóloga Andressa em um auditório" />
+                        <img src="images/andressa2.svg" alt="Foto da Psicóloga Andressa" />
                     </div>
                     <div>
                         <ContentBlock title={boxTopicos[2].title} description={boxTopicos[2].description} style="aboutMeContent" />
@@ -31,6 +31,10 @@ function AboutMeSection() {
                 </div>
                 <div className={styles.centralizedContent}>
                     <ContentBlock title={boxTopicos[4].title} description={boxTopicos[4].description} style="aboutMeContent" />
+                </div>
+                {/* Adicionando a libélula aqui */}
+                <div className={styles.libelulaAboutMe}>
+                    <img src="/images/AboutMe_Right_Libelula.svg" alt="libelula" />
                 </div>
             </div>
         </section>
