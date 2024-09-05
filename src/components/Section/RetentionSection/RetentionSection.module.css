@@ -43,6 +43,7 @@
     height: 230px;
     background: url('/images/retentionLogo.svg');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .flower-bottom-left {
@@ -54,4 +55,31 @@
     top: 55px;
     right: -30px;
     transform: scaleX(-1)
+}
+
+@media screen and (max-width: 768px){
+    .retentionSection >div{
+        width: 100%;
+    }
+
+    .retentionSection p{
+        font-size: 16px;
+    }
+    
+    .flower {
+        width: 35%;
+       
+    }
+
+    .flower-bottom-left {
+        bottom: -120px;
+        left: 0px;
+    }
+
+    .flower-top-right {
+        top: 10px;
+        right: 0px;
+        transform: scaleX(-1)
+    }
+    
 }

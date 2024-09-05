@@ -99,3 +99,39 @@
 .aboutMeContent p {
     margin-bottom: 0rem;
 }
+
+
+@media screen and (max-width: 768px){
+
+    /* --------------------------------Button-------------------------------- */
+    .button {
+        font-size: 1.0rem;
+    }
+
+    /* --------------------------------Title-------------------------------- */
+    .titleDefault {
+        font-size: 1.5rem;
+    }
+
+    .titleMediaSection{
+        text-align: center;
+    }
+
+    /* --------------------------------contentBlock-------------------------------- */
+    .contentBlock {
+        width: 100%;
+        margin: 5px;
+    }
+    
+    .contentBlock h3 {
+        color: #5b3923;
+        font-size: 1.1rem;
+        
+    }
+    
+    .contentBlock p {
+        color: #333;
+        font-size: 1rem;
+    }
+    
+}
