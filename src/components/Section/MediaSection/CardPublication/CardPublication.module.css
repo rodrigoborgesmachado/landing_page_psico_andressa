@@ -62,7 +62,8 @@ a:link {
 
 .cardWrapper{
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 6px 0px;
 }
 
 .cardWrapper p,
