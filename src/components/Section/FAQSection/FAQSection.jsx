@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Title from '../../Common/Title';
 import './../../Common/css/Common.module.css';
 import FAQItem from './FAQItem';
@@ -22,21 +23,26 @@ function FAQSection() {
     };
 
     return (
-        <section className={styles.faqSection}>
-            <div className={styles.faqImage}></div>
-            <div>
-                <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
-                {perguntas.map((item, index) => (
-                    <FAQItem
-                        key={index}
-                        index={index}
-                        item={item}
-                        isOpen={openIndex === index}
-                        onToggle={handleToggle}
-                    />
-                ))}
-            </div>
-        </section>
+        <ParallaxProvider>
+            <section className={styles.faqSection}>
+                {/* Configurando o Parallax para rolar a imagem */}
+                <Parallax className={styles.faqImage} y={[-30, 30]} tagOuter="figure">
+                    <div className={styles.imageContent}></div>
+                </Parallax>
+                <div className={styles.faqBody}>
+                    <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
+                    {perguntas.map((item, index) => (
+                        <FAQItem
+                            key={index}
+                            index={index}
+                            item={item}
+                            isOpen={openIndex === index}
+                            onToggle={handleToggle}
+                        />
+                    ))}
+                </div>
+            </section>
+        </ParallaxProvider>
     );
 }
 
