@@ -80,10 +80,10 @@
     margin-top: 20px;
 }
 
-.libelulaAboutMe img:nth-child(1){
+.libelulaAboutMe img{
     position: absolute;
     bottom: 100px;
-    left: 125%;
+    left: 115%;
     transform: translateX(-50%);
     width: 40%;
     height: auto;
