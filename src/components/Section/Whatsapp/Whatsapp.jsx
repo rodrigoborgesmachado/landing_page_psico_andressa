@@ -3,7 +3,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 export default function Whatsapp() {
     return (
         <FloatingWhatsApp
-            phoneNumber='+5534998677621' // Número do WhatsApp em formato internacional para onde as mensagens serão enviadas
+            phoneNumber='+5534996545701' // Número do WhatsApp em formato internacional para onde as mensagens serão enviadas
             accountName='Psicóloga Andressa' // Nome da conta exibido no chat, pode incluir emojis para personalização
             chatMessage='Olá! 🌟 Seja bem-vindo(a) ao nosso espaço de acolhimento e apoio. Vamos juntos trabalhar para que você se sinta melhor. Como posso te ajudar?' // Mensagem exibida na caixa de chat ao abrir
             statusMessage='Disponível' // Mensagem de status exibida abaixo do nome da conta, informando a disponibilidade
@@ -15,7 +15,7 @@ export default function Whatsapp() {
             notification={true} // Habilita notificações que aparecem antes do usuário abrir o chat
             notificationDelay={10} // Intervalo de tempo em segundos entre as notificações repetitivas
             notificationSound={true} // Habilita o som de notificação quando a notificação é exibida
-            chatboxHeight={350} // Define a altura da caixa de chat em pixels
+            chatboxHeight={370} // Define a altura da caixa de chat em pixels
             avatar='/images/whatsApp_Andressa.png'// Aqui não definimos o avatar, então o avatar padrão será utilizado
         />
     );
