@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
+import 'animate.css';
+import { useEffect, useRef, useState } from 'react';
 import Button from '../../Common/Button';
 import Title from '../../Common/Title';
 import ModalFormSection from '../ModalFormSection/ModalFormSection';
 import styles from './RetentionSection.module.css';
-import 'animate.css';
 
 function RetentionSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);

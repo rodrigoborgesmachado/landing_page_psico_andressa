@@ -1,4 +1,3 @@
-
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -30,13 +29,12 @@
 
 .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 25px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
-    color:#64090e ;
 }
 
 .modalContent {
@@ -49,7 +47,6 @@
 
 .imageContainer {
     width: 50%;
-    /* flex: 0 0 50%; A imagem ocupa 40% do container */
     background-image: url('/images/Modal_Img_desktop.jpg');
     background-size:cover;
     background-position: center;
@@ -59,54 +56,52 @@
 
 .formContainer {
     flex: 1;
-    margin: auto; /* O formulário ocupa o restante do espaço */
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; 
-
-
+    width: 100%;
+    height: 100%;
 }
 
 .formContainer h2 {
-    width: 50%;
+    width: 100%;
     margin: auto;
     text-align: center;
     color: #64090e;
-    margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 10%;
 }
 
 .inputGroup {
     display: flex;
+    flex-direction: column;
     margin: auto;
     align-items: center;
-    width: 80%; /* Garante que o grupo de input ocupe toda a largura do formulário */
+    width: 100%;
     margin-bottom: 10px;
-    flex-wrap: nowrap; /* Impede que os elementos dentro do grupo se quebrem em múltiplas linhas */
+    flex-wrap: nowrap;
 }
 
 .inputGroup label {
-    width: 30%; /* A label ocupa 60% do espaço */
+    width: 30%; 
     font-weight: bold;
     color: #333;
     text-align:right;
-    margin-right: 25px;
+    margin-right: 20px;
     margin-top: 0px;
 }
 
-/* Adicionando a classe para alinhar input e erro em coluna */
 .inputWithError {
-    width: 60vh; /* Define a largura dos inputs para ocupar o espaço restante */
+    width: 80%; 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding-bottom: 0px;
-    /* border: #64090e 2px solid; */
+    flex-direction: row;
 }
 
 .inputWithError input    {
-    width: 100%; /* Mantém o input ocupando toda a largura da div */
+    width: 100%; 
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -114,7 +109,6 @@
     color: #000;
     box-sizing: border-box;
     height: 35px; /* Define uma altura fixa para os inputs */
-
 }
 
 /* Estilo para os erros específicos nos campos */
@@ -131,14 +125,35 @@
 .inputWithError .error.visible {
     visibility: visible; /* Torna a mensagem de erro visível quando necessário */
     font-size: 10px;
+    color: #6e0d0a;
 }
 
 .divErro {
     min-height: 30px;
+    color: #6e0d0a;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 12px;
+}
+
+.divErro span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.contentForm {  
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
 }
 
 .submitButton {
-    align-self: flex-end; /* Move o botão para a direita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #8a0303;
     color: white;
     padding: 10px 20px;
@@ -146,11 +161,14 @@
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    width: 50%; /* O botão ocupa 50% da largura do formulário */
-    max-width: 200px; /* Define uma largura máxima para o botão */
-    margin-top: 20px; /* Adiciona um espaçamento superior */
-    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 
 .submitButton:hover {
     background-color: #6e0202;

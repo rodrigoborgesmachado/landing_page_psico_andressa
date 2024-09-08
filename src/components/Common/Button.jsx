@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import styles from './css/Common.module.css';
 
-// eslint-disable-next-line no-unused-vars
-function Button({ name, onClick, style: variant = "", path }) {
+function Button({ name, onClick, id, className, style: variant = "", path }) {
     return (
-        <button onClick={onClick} className={`${styles.button} ${styles[variant]}`}>
+        <button
+            id={id || undefined} // Aplica o id se fornecido
+            className={`${styles.button} ${styles[variant]} ${className || ""}`} // Aplica a classe se fornecida
+            onClick={onClick}
+        >
             {name}
         </button>
     );
@@ -13,7 +16,9 @@ function Button({ name, onClick, style: variant = "", path }) {
 Button.propTypes = {
     name: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
-    style: PropTypes.string,
+    id: PropTypes.string, // Adicionando a prop `id`
+    className: PropTypes.string, // Adicionando a prop `className`
+    style: PropTypes.string, // Mantendo a prop `variant` para o estilo do CSS module
     path: PropTypes.string,
 };
 
