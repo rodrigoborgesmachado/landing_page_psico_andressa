@@ -14,7 +14,9 @@ function ModalForm({ form, errors, successMessage, generalErrorMessage, onInputC
                         value={form.name}
                         onChange={onInputChange}
                     />
-                    <span className={`${styles.error} ${errors.name ? styles.visible : ''}`}>{errors.name}</span>
+                    <div className={styles.divErro}>
+                        <span className={`${styles.error} ${errors.name ? styles.visible : ''}`}>{errors.name}</span>
+                    </div>
                 </div>
             </div>
             <div className={styles.inputGroup}>
@@ -56,9 +58,11 @@ function ModalForm({ form, errors, successMessage, generalErrorMessage, onInputC
                     <span className={`${styles.error} ${errors.message ? styles.visible : ''}`}>{errors.message}</span>
                 </div>
             </div>
+            <button type="submit" className={styles.submitButton}>Enviar</button>
+            <div className={styles.msgEnvio}>
             {successMessage && <div className={styles.successMessage}>{successMessage}</div>}
             {generalErrorMessage && <div className={styles.errorMessage}>{generalErrorMessage}</div>}
-            <button type="submit" className={styles.submitButton}>Enviar</button>
+            </div>
         </form>
     );
 }

@@ -1,70 +1,58 @@
 .faqSection {
-  background-color: white; /* Fundo bege */
-  padding: 150px 0 50px; /* Espaço no topo para a imagem */
+  background-color: white;
+  padding: 0px 0px 0px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 800px; /* Ajuste conforme necessário para espaço suficiente */
+  flex-direction: column;
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .faqImage {
   width: 100%;
-  height: 150px; /* Altura da imagem */
-  background: url('/images/paralaxFaq.svg') no-repeat center top; /* Insira o caminho correto para sua imagem aqui */
+  height: 80px;
+  background: url('/images/paralaxFaq.svg') no-repeat center top;
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: translate3d(0, 0, 0); /* Garante que a imagem seja renderizada com parallax */
 }
 
-.content {
-  width: 100%;
-  max-width: 900px;
-  padding: 30px;
+.faqBody {
+  max-width: 90%; /* Limitar a largura máxima para não ficar muito largo em telas grandes */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Padding lateral para evitar que o conteúdo encoste nas bordas */
   box-sizing: border-box;
-  border-radius: 5px;
-  margin: 0 auto;
-  background-color: #ffffff; /* Fundo branco para o conteúdo */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  z-index: 3; /* Para garantir que o conteúdo fique acima da curva e da imagem */
-}
-
-.faqList {
-  width: 100%;
+  min-height: fit-content;
 }
 
 .faqDetails {
-  margin-bottom: 15px;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   overflow: hidden;
-  width: 80%;
+  width: 100%; 
   box-sizing: border-box;
   transition: max-height 0.5s ease-in-out;
   background-color: #f7deb0;
   border: 1px solid #d6c7a7;
-  padding: 15px 20px;
-  max-height: 60px;
+  padding: 10px 15px;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 15px auto;
 }
 
 .faqDetailsOpen {
-  max-height: 1000px; 
+  max-height: 1000px;
 }
 
 .faqSummary {
-  font-family: 'Arial', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   cursor: pointer;
   list-style: none;
@@ -78,31 +66,65 @@
 
 .faqSummaryIcon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff; 
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
   border-radius: 50%;
   margin-right: 10px;
   flex-shrink: 0;
 }
 
 .faqDetailsContent {
-  font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #000000;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 0px 0px 0px;
   background-color: #f7deb0;
   transition: opacity 0.5s ease;
   opacity: 0;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 10px;
   position: static;
   border-top: #ffffff 2px solid;
 }
 
 .faqContentOpen {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  transition: opacity 1.0s ease-in-out, max-height 1.5s ease-in-out;
+}
+
+/* Media Query para telas maiores (desktop) */
+@media (min-width: 768px) {
+  .faqSection {
+    padding: 150px 0 50px;
+    flex-direction: row;
+    min-height: 800px;
+  }
+
+  .faqImage {
+    height: 130px;
+  }
+
+  .faqDetails {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px auto;
+  }
+
+  .faqSummary {
+    font-size: 20px;
+  }
+
+  .faqSummaryIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .faqDetailsContent {
+    font-size: 20px;
+    margin: 10px 20px 0px 20px;
+    padding: 10px 20px;
+    width: 90%;
+  }
 }
