@@ -3,7 +3,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 export default function Whatsapp() {
     return (
         <FloatingWhatsApp
-            phoneNumber='+5534996545701' // Número do WhatsApp em formato internacional para onde as mensagens serão enviadas
+            phoneNumber='+553496545701' // Número do WhatsApp em formato internacional para onde as mensagens serão enviadas
             accountName='Psicóloga Andressa' // Nome da conta exibido no chat, pode incluir emojis para personalização
             chatMessage='Olá! 🌟 Seja bem-vindo(a) ao nosso espaço de acolhimento e apoio. Vamos juntos trabalhar para que você se sinta melhor. Como posso te ajudar?' // Mensagem exibida na caixa de chat ao abrir
             statusMessage='Disponível' // Mensagem de status exibida abaixo do nome da conta, informando a disponibilidade
