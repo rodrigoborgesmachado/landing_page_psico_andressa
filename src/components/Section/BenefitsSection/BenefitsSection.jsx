@@ -53,7 +53,10 @@ function BenefitsSection() {
 						))}
 					</div>
 				</div>
-			</div>		
+			</div>	
+			<div className={css.libelulaBenefits}>
+				<img src="/icons/Layer_1-2.png" alt="libelula" />
+			</div>	
 		</section>
 	);
 }
