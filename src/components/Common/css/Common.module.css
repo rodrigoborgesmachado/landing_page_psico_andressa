@@ -9,23 +9,69 @@
     font-size: 1.2rem;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: 0.3s ease;
     font-weight: bold;
 }
 
-.retentionSectionButton{
+/* .retentionSectionButton{
     background: linear-gradient(135deg, #ffffff, #f4f4f4);
     color: #6e0d0a;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
+/* ----------testes----------------- */
+
+
+.retentionSectionButton {
+    padding: 15px 40px; /* Ajuste o padding superior e inferior */
+    font-size: 20px;
+    text-align: center;
+    line-height: normal; /* Remova o line-height fixo */
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    background: linear-gradient(45deg, #FF6A00, #FFB76B, #FF3C83, #FF8C94);
+    /* background: linear-gradient(45deg, #009688, #26D07C, #2EC4B6, #FF5F7E); */
+    background-size: 600%;
+    animation: anime 10s linear infinite;
+    position: relative; /* Ajuste para permitir desfoque opcional */
+    transition: all 0.3s;
+    box-shadow: none;
+  }
+  
+  .retentionSectionButton::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Ajuste para desfoque */
+    left: -10px;
+    right: -10px;
+    bottom: -5px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #FF6A00, #FFB76B, #FF3C83, #FF8C94);
+    /* background: linear-gradient(45deg, #009688, #26D07C, #2EC4B6, #FF5F7E); */
+    background-size: 600%;
+    filter: blur(30px);
+    z-index: -1;
+    animation: anime 10s linear infinite;
+  }
+  
+  @keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/* -----fim teste------- */
+
 
 .button:hover {
-    background: linear-gradient(150deg, #6e0d0a, #000000);
-    opacity: 84%;
-    color: #FFFFFF; /* Mantém a cor do texto branca */
-    font-size: 1.2em;
-    transform: translateY(-6px);
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 
 .button:active {
@@ -50,25 +96,25 @@
     margin-top: 0.5625rem;
 }
 
-.titleBenefitsSection{
+.titleBenefitsSection {
     color: #2F0202;
     text-align: left;
     margin-top: 30px;
 }
 
-.titleRetentionSection{
+.titleRetentionSection {
     color: white;
 }
 
-.titleFAQSection{
+.titleFAQSection {
     color: black;
     text-align: center;
     margin-top: 30px;
 }
 
 
-.titleMediaSection{
-    color:black;
+.titleMediaSection {
+    color: black;
     text-align: left;
 
 }
@@ -101,7 +147,7 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     /* --------------------------------Button-------------------------------- */
     .button {
@@ -113,7 +159,7 @@
         font-size: 1.5rem;
     }
 
-    .titleMediaSection{
+    .titleMediaSection {
         text-align: center;
     }
 
@@ -122,14 +168,14 @@
         width: 100%;
         margin: 5px;
     }
-    
+
     .contentBlock h3 {
         font-size: 1.1rem;
-        
+
     }
-    
+
     .contentBlock p {
         font-size: 1rem;
     }
-    
+
 }
