@@ -204,3 +204,81 @@
     min-height: 50px;
     margin: 0px;
 }
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    
+    .modalContainer {
+        flex-direction: column; /* Alinha imagem e formulário verticalmente */
+        width: 90%;
+        height: auto; /* Ajusta a altura conforme o conteúdo */
+        max-height: 70vh; /* Limita a altura para 90% da altura da tela */
+        overflow-y: auto; /* Permite rolagem no mobile também */
+    }
+
+    .modalContent {
+        flex-direction: column; /* Alinha o conteúdo em coluna no mobile */
+    }
+
+    .contentForm {
+        margin-top: 20px; /* Remove a margem superior do formulário */
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 90px; /* Ajusta a altura da imagem no mobile */
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .formContainer h2 {
+        margin-top: 0px; /* Remove a margem superior do título */
+        margin-bottom: 0px;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 5px;
+    }
+
+    .divErro {
+        margin: 0px;
+        padding: 0px;
+        height: fit-content;
+    }
+
+
+    .submitButton {
+        width: 100%; /* Botão ocupa a largura total no mobile */
+        max-width: none;
+        font-size: 14px;
+    }
+
+    .inputGroup label {
+        width: 100%; /* Label ocupa a largura toda no mobile */
+        text-align: left; /* Alinha o texto da label à esquerda */
+        margin-bottom: 5px;
+    }
+
+    .inputWithError {
+        width: 100%; /* Inputs ocupam 100% no mobile */
+        flex-direction: column;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+
+    .inputWithError input {
+        width: 100%; /* Ajusta a largura dos inputs para preencher o espaço */
+        /* border: #000 2px solid; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .successMessage, .errorMessage {
+        width: 90%; /* Mensagens ocupam mais espaço em telas menores */
+        font-size: 12px;
+    }
+}
