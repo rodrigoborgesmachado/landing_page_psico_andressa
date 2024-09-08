@@ -232,7 +232,7 @@
         height: 90px; 
         border-radius: 10px 10px 0 0;
         background-size: cover;
-        background-position: center;
+        background-position: bottom 180px left 0px;
     }
 
     .formContainer {
