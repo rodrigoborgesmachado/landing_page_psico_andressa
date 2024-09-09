@@ -8,46 +8,59 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 500px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .faqImage {
   width: 100%;
-  height: 80px;
+  height: 100px; /* Altura inicial */
   background: url('/images/paralaxFaq.svg') no-repeat center top;
   background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 1;
-  transform: translate3d(0, 0, 0); /* Garante que a imagem seja renderizada com parallax */
+  transform: translate3d(0, 0, 0);
 }
 
 .faqBody {
-  max-width: 90%; /* Limitar a largura máxima para não ficar muito largo em telas grandes */
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 0 20px; /* Padding lateral para evitar que o conteúdo encoste nas bordas */
+  max-width: 70%; /* Ajuste para desktop */
+  margin: 0 auto;
+  padding: 40px 0; /* Ajuste de padding */
   box-sizing: border-box;
   min-height: fit-content;
+  z-index: 2;
+}
+
+.faqList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espaçamento entre os itens */
 }
 
 .faqDetails {
-  margin-bottom: 10px;
-  border-radius: 10px;
-  overflow: hidden;
+  margin-bottom: 5px;
+  border-radius: 12px;
   width: 100%; 
   box-sizing: border-box;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, background-color 0.3s ease, padding 0.5s ease;
   background-color: #f7deb0;
   border: 1px solid #d6c7a7;
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.faqDetails:hover {
+  background-color: #e7caa1; /* Efeito de hover */
+}
+
+.faqDetails.faqDetailsOpen:hover {
+  background-color: #f7deb0; /* Mantém a cor original ao abrir */
+}
+
 .faqDetailsOpen {
+  padding: 20px 25px; /* Aumenta o padding para desktop */
   max-height: 1000px;
 }
 
@@ -76,55 +89,85 @@
 
 .faqDetailsContent {
   font-size: 16px;
-  color: #000000;
-  margin: 10px 0px 0px 0px;
+  color: #f7deb0;
+  margin: 0;
   background-color: #f7deb0;
-  transition: opacity 0.5s ease;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
   opacity: 0;
+  max-height: 0px;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
-  position: static;
-  border-top: #ffffff 2px solid;
+  padding: 0;
+  visibility: hidden;
+  border-top: 1px solid white;
+  color: #f7deb0;
 }
 
 .faqContentOpen {
   opacity: 1;
-  transition: opacity 1.0s ease-in-out, max-height 1.5s ease-in-out;
+  color: #000000;
+  max-height: 1000px;
+  visibility: visible;
+  padding: 10px;
+  transition: color 1.5s ease-in-out, max-height 1.0s ease-in-out, opacity 1.0s ease-in-out, padding 1.0s ease-in-out;
 }
 
-/* Media Query para telas maiores (desktop) */
-@media (min-width: 768px) {
+/* Media Queries para Desktop */
+@media screen and (min-width: 1024px) {
   .faqSection {
-    padding: 150px 0 50px;
-    flex-direction: row;
-    min-height: 800px;
+    padding: 0px 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .faqImage {
-    height: 130px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0%;
+    padding: 0%;
+    height: 300px; /* Aumenta a altura da imagem para desktop */
+  }
+
+  .faqBody {
+    max-width: 60%; /* Diminui a largura em telas maiores */
+    padding: 50px 0;
   }
 
   .faqDetails {
-    width: 100%;
-    padding: 15px 20px;
-    margin: 15px auto;
+    font-size: 1.2rem; /* Tamanho maior para melhor legibilidade em desktop */
+    padding: 10px 15px; /* Padding maior para melhor legibilidade */
   }
 
   .faqSummary {
-    font-size: 20px;
-  }
-
-  .faqSummaryIcon {
-    width: 12px;
-    height: 12px;
+    font-size: 1.5rem; /* Aumenta o tamanho do texto das perguntas */
   }
 
   .faqDetailsContent {
-    font-size: 20px;
-    margin: 10px 20px 0px 20px;
-    padding: 10px 20px;
-    width: 90%;
+    font-size: 1.3rem; /* Aumenta o tamanho do texto das respostas */
+    padding: 15px 25px; /* Aumenta o padding para melhor leitura */
+  }
+}
+
+/* Media Queries para Mobile */
+@media screen and (max-width: 768px) {
+  .faqBody {
+    max-width: 90%; /* Ajusta a largura em telas menores */
+    padding: 20px 0; /* Menos padding no mobile */
+  }
+
+  .faqDetails {
+    padding: 10px 15px; /* Ajusta o padding para mobile */
+  }
+
+  .faqSummary {
+    font-size: 16px;
+  }
+
+  .faqDetailsContent {
+    font-size: 16px;
+    padding: 10px 15px;
   }
 }

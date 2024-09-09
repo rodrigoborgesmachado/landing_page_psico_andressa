@@ -22,15 +22,27 @@ function FAQSection() {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
+    // Adicionando o requestAnimationFrame para garantir a transição suave
+    useEffect(() => {
+        if (openIndex !== null) {
+            requestAnimationFrame(() => {
+                const openItem = document.querySelectorAll('.faqDetailsContent')[openIndex];
+                if (openItem) {
+                    openItem.style.opacity = 1; // Garante que a opacidade seja aplicada após o render
+                }
+            });
+        }
+    }, [openIndex]);
+
     return (
         <ParallaxProvider>
             <section className={styles.faqSection}>
-                {/* Configurando o Parallax para rolar a imagem */}
-                <Parallax className={styles.faqImage} y={[-30, 30]} tagOuter="figure">
+                <Parallax className={styles.faqImage} y={[-30, 30]} tag="figure">
                     <div className={styles.imageContent}></div>
                 </Parallax>
                 <div className={styles.faqBody}>
                     <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
+                    <div className={styles.faqList}>
                     {perguntas.map((item, index) => (
                         <FAQItem
                             key={index}
@@ -40,6 +52,7 @@ function FAQSection() {
                             onToggle={handleToggle}
                         />
                     ))}
+                    </div>
                 </div>
             </section>
         </ParallaxProvider>

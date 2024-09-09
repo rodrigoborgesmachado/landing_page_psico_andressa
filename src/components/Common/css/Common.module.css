@@ -105,9 +105,17 @@
 }
 
 .titleFAQSection {
+    padding: 0px;
+    margin: 0px;
     color: black;
     text-align: center;
     margin-top: 30px;
+    width: 100%;
+    border: #2F0202 1px solid;
+    position: sticky; 
+    top: 0; 
+    background-color: white; 
+    z-index: 10;
 }
 
 
