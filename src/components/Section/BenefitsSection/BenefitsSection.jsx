@@ -3,6 +3,11 @@ import Title from '../../Common/Title';
 import css from './BenefitsSection.module.css'
 import CircleImageAndTitle from './CircleImageAndTitle/CircleImageAndTitle';
 
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
+import '../BenefitsSection/benefitsStyle.css'
+
 function BenefitsSection() {
 
 	const subtitleImage = [
@@ -30,7 +35,37 @@ function BenefitsSection() {
 		  image: "/icons/escalators.png",
 		  subtitle: "Resiliência",
 		}
-	  ]
+	]
+
+	const containerIcons = {
+		hidden: { opacity: 1, scale: 0 },
+		visible: {
+		  opacity: 1,
+		  scale: 1,
+		  transition: {
+			delayChildren: 0.3,
+			staggerChildren: 0.2
+		  }
+		}
+	};
+	  
+	const itemVariants = {
+		hidden: { y: 20, opacity: 0 },
+		visible: {
+		  y: 0,
+		  opacity: 1
+		},
+		transition: {
+			duration: 0.5 
+		}
+	};
+
+	
+	const { ref, inView } = useInView({
+	  triggerOnce: false, 
+	  threshold: 0.2,
+	});
+	
 
 	return (
 		<section className={css.benefitsSection}>
@@ -43,15 +78,37 @@ function BenefitsSection() {
 					</div>
 				</div>
 				<div>
-					<div className={css.boxesGroupIcons}>
-						{subtitleImage.map((item, index) => (
-							<CircleImageAndTitle
-								key={index} 
-								image={item.image}
-								title={item.subtitle}
-							/>
-						))}
+					<div ref={ref} className={css.boxesGroupIcons}>
+						<motion.ul
+							className={css.boxesGroupIcons}
+							variants={containerIcons}
+							initial="hidden"
+							animate={inView ? "visible" : "hidden"} 
+				  		>
+							{subtitleImage.map((item, index) => (
+  								<motion.li 
+  								  key={index} 
+  								  className={`${css.boxesGroupIcons} items`} 
+  								  variants={itemVariants} 
+  								>
+  								  <CircleImageAndTitle
+								  	key={index}
+  								    image={item.image}
+  								    title={item.subtitle}
+  								  />
+  								</motion.li>
+							))}
+						</motion.ul>
 					</div>
+						{/* <div className={css.boxesGroupIcons}>
+							{subtitleImage.map((item, index) => (
+								<CircleImageAndTitle
+									key={index} 
+									image={item.image}
+									title={item.subtitle}
+								/>
+							))}
+						</div> */}
 				</div>
 			</div>	
 			<div className={css.libelulaBenefits}>
