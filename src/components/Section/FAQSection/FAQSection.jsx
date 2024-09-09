@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import Title from '../../Common/Title';
 import './../../Common/css/Common.module.css';
 import FAQItem from './FAQItem';
@@ -25,21 +25,24 @@ function FAQSection() {
     return (
         <ParallaxProvider>
             <section className={styles.faqSection}>
-                <Parallax className={styles.faqImage} y={[-50, 50]} tag="figure">
-                    <div className={styles.imageContent}></div>
-                </Parallax>
+                <ParallaxBanner
+                    layers={[
+                        { image: '/images/parallaxfaq2.jpg', speed: -10 }
+                    ]}
+                    className={styles.faqImage}
+                />
                 <div className={styles.faqBody}>
                     <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
                     <div className={styles.faqList}>
-                    {perguntas.map((item, index) => (
-                        <FAQItem
-                            key={index}
-                            index={index}
-                            item={item}
-                            isOpen={openIndex === index}
-                            onToggle={handleToggle}
-                        />
-                    ))}
+                        {perguntas.map((item, index) => (
+                            <FAQItem
+                                key={index}
+                                index={index}
+                                item={item}
+                                isOpen={openIndex === index}
+                                onToggle={handleToggle}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
