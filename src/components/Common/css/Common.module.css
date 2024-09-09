@@ -39,7 +39,7 @@
     right: -3px;
     bottom: -3px;
     border-radius: 50px;
-    background: linear-gradient(45deg, #020202, #FF3C83, #FF8C94);
+    background: linear-gradient(45deg, #313131, #FF3C83, #FF8C94);
     background-size: 600%;
     filter: blur(15px); /* Blur menor */
     z-index: -1; /* Fica atrás do botão */
