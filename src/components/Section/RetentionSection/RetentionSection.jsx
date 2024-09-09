@@ -30,7 +30,7 @@ function RetentionSection() {
                 });
             },
             {
-                threshold: 0.05, // 5% da seção visível
+                threshold: 0.70 // 70% da seção visível
             }
         );
 
