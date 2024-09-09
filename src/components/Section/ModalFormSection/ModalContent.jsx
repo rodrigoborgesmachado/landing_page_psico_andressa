@@ -24,14 +24,50 @@ function ModalContent() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+    
+        // Valida o formulário antes de enviar
         if (validateForm()) {
-            setSuccessMessage("Mensagem enviada com sucesso!");
-            setGeneralErrorMessage('');
-            setForm({ name: '', phone1: '', email: '', message: '' });
+            // Cria o FormData com os dados do formulário
+            const formData = new FormData();
+            formData.append('service_id', 'service_4hwfzpt'); // Substitua pelos valores corretos
+            formData.append('template_id', 'template_f3fldt9');
+            formData.append('user_id', '0WR7BbjH3pvzp1Dj2');
+            formData.append('from_name', form.name);
+            formData.append('from_phone1', form.phone1);
+            formData.append('from_email', form.email);
+            formData.append('from_message', form.message);
+    
+            // Envio do formulário via fetch
+            fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json',
+                },
+            })
+            .then((response) => {
+                if (response.ok) {
+                    // Exibe a mensagem de sucesso após o envio do email
+                    setSuccessMessage("Mensagem enviada com sucesso!");
+                    setGeneralErrorMessage('');
+                    // Limpa o formulário
+                    setForm({ name: '', phone1: '', email: '', message: '' });
+                } else {
+                    return response.text().then(text => { throw new Error(text) });
+                }
+            })
+            .catch((error) => {
+                // Exibe uma mensagem de erro caso o envio falhe
+                setGeneralErrorMessage("Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.");
+                console.error('Erro:', error);
+            });
         } else {
+            // Se a validação falhar, exibe uma mensagem de erro
             setGeneralErrorMessage("Por favor, corrija os erros acima antes de enviar.");
+            setSuccessMessage('');
         }
     };
+    
 
     const validateForm = () => {
         let valid = true;
