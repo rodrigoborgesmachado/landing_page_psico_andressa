@@ -89,3 +89,51 @@
     height: auto;
     z-index: 1;
 }
+
+.mobileAboutMeSection {
+    background-color: rgba(250, 246, 235, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.mobileBoxImages {
+    position: relative;
+    height: 47vh;
+    margin-bottom: 2rem;
+}
+
+.mobileBoxImages img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.mobileBoxImages img:nth-child(1) {
+    width: 75%;
+    margin-left: 1.5rem;
+    top: 0;
+}
+
+.mobileBoxImages img:nth-child(2) {
+    width: 40%;
+    bottom: 0;
+    right: 0;
+    margin-right: 1.5rem;
+}
+
+.mobileAboutMeSection {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutMeSection {
+        display: none;
+    }
+
+    .mobileAboutMeSection {
+        display: flex;
+    }
+
+}

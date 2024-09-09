@@ -1,7 +1,12 @@
-import { useState, useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
+
+    const showSettings = (event) => {
+        event.preventDefault();
+    }
+
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -21,12 +26,13 @@ const Header = () => {
         };
     }, []);
 
-    // Aqui estamos combinando as classes
     const headerClasses = scrolled ? `${styles.stickyHeader} ${styles.scrolled}` : styles.stickyHeader;
 
-    return (
-        <span>
+    return (<span>
             <header className={headerClasses}>
+                <div className={styles.imgBox}>
+                    <img src="/images/logo-branca.svg" alt="logo"/>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="#terapia">TERAPIA</a></li>
@@ -37,8 +43,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </header>
-        </span>
-    );
+        </span>);
 };
 
 export default Header;

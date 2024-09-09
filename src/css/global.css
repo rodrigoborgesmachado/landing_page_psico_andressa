@@ -14,7 +14,7 @@ section {
 }
 
 section > div {
-    width: 75rem;
+    width: min(75rem, 100%);
 }
 
 /* No seu arquivo CSS global (e.g., styles.css ou App.css) */

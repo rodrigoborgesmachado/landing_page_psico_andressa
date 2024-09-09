@@ -13,20 +13,20 @@ import Whatsapp from './components/Section/Whatsapp/Whatsapp';
 import './css/global.css';
 
 function App() {
-  return (
-    <ParallaxProvider> {/* Envolva seu app com o ParallaxProvider */}
-      <Header />
-      <HomeSection />
-      <SpecialtySection />
-      <BenefitsSection />
-      <AboutMeSection />
-      <RetentionSection />
-      <FAQSection /> {/* Por exemplo, o FAQSection pode usar o parallax */}
-      <MediaSection />
-      <Footer />
-      <Whatsapp />
-    </ParallaxProvider>
-  )
+    return (
+        <ParallaxProvider> {/* Envolva seu app com o ParallaxProvider */}
+            <Header/>
+            <HomeSection/>
+            <SpecialtySection/>
+            <BenefitsSection/>
+            <AboutMeSection/>
+            <RetentionSection/>
+            <FAQSection/> {/* Por exemplo, o FAQSection pode usar o parallax */}
+            <MediaSection/>
+            <Footer/>
+            <Whatsapp/>
+        </ParallaxProvider>
+    )
 }
 
 export default App
