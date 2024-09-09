@@ -22,22 +22,10 @@ function FAQSection() {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
-    // Adicionando o requestAnimationFrame para garantir a transição suave
-    useEffect(() => {
-        if (openIndex !== null) {
-            requestAnimationFrame(() => {
-                const openItem = document.querySelectorAll('.faqDetailsContent')[openIndex];
-                if (openItem) {
-                    openItem.style.opacity = 1; // Garante que a opacidade seja aplicada após o render
-                }
-            });
-        }
-    }, [openIndex]);
-
     return (
         <ParallaxProvider>
             <section className={styles.faqSection}>
-                <Parallax className={styles.faqImage} y={[-30, 30]} tag="figure">
+                <Parallax className={styles.faqImage} y={[-50, 50]} tag="figure">
                     <div className={styles.imageContent}></div>
                 </Parallax>
                 <div className={styles.faqBody}>
