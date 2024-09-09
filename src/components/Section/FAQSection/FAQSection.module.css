@@ -58,7 +58,7 @@
 }
 
 .faqSummary {
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   color: black;
   cursor: pointer;
@@ -81,7 +81,7 @@
 }
 
 .faqDetailsContent {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   background-color: #f7deb0;
   transition: height 0.3s ease, opacity 0.5s ease, padding 0.3s ease;
@@ -93,6 +93,7 @@
   padding: 0;
   visibility: hidden;
   border-top: 1px solid white;
+  
 }
 
 .faqContentOpen {
@@ -140,7 +141,7 @@
   }
   .faqImage {
     background-position: right top;
-    height: 40vh;
+    height: 60vh;
   }
   .faqList {
     margin-top: 40px;
@@ -166,7 +167,7 @@
   }
 
   .faqSummary {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .faqDetailsContent {
