@@ -38,8 +38,8 @@
 
 .libelulaBenefits>img{
     padding: 0;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     z-index: 1;
 }
 
@@ -72,7 +72,6 @@
         justify-content: space-between;
     }
 
-    
 
 }
 
