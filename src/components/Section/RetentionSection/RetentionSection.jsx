@@ -30,7 +30,7 @@ function RetentionSection() {
                 });
             },
             {
-                threshold: 0.05, // 5% da seção visível
+                threshold: 0.70 // 70% da seção visível
             }
         );
 
@@ -58,7 +58,7 @@ function RetentionSection() {
             <div
                 ref={sectionRef} // Associa o ref à div
                 // Usa `opacity: 0` até que o conteúdo seja visível
-                className={`${isVisible ? 'animate__animated animate__fadeInUp' : ''}`}
+                className={`${isVisible ? 'animate__animated animate__fadeIn' : ''}`}
                 style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}
             >
                 <Title title={'Descubra Seu Potencial!'} style={'titleRetentionSection'} />
