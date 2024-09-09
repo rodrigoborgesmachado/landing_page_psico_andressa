@@ -46,7 +46,7 @@
   transition: height 3s ease-in-out, background-color 0.5s ease, padding 0.3s ease;
   background-color: #f7deb0;
   border: 1px solid #d6c7a7;
-  padding: 10px 10px;
+  padding: 10px 5px;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   height: 60px; /* Altura inicial */
@@ -60,14 +60,14 @@
 
 .faqSummary {
   font-size: 16px;
+  width: 100%;
   color: black;
   cursor: pointer;
   list-style: none;
   padding: 3px;
-  margin: 2px;
+  margin: 0px;
   display: flex;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -77,7 +77,7 @@
   height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 5px 5px;
   flex-shrink: 0;
 }
 
@@ -96,6 +96,7 @@
   visibility: hidden;
   border-top: 1px solid white;
   color: #f7deb0;
+  text-align: right;
 }
 
 .faqContentOpen {
