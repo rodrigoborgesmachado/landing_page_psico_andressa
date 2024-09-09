@@ -27,7 +27,7 @@ function Footer() {
                 <img src="/icons/fundo_footer.png" alt="arredondado" className={css.footerImage} />
             </div>
             <div className={css.footerContent}>
-                <div>
+                <div className={css.boxImageMedia}>
                     {infoSocialMedia.map((item, index) => (
                         <SocialMedia
                             key={index}
