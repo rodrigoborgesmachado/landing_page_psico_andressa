@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: start;
     height: 100vh;
-    background-image: url('public/images/FundoHomeSection.svg');
+    background-image: url('/images/FundoHomeSection.svg');
     background-size: cover;
     background-position: center;
     position: relative;
