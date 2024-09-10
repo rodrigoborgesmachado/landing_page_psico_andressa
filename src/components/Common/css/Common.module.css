@@ -1,73 +1,66 @@
 /* --------------------------------Button-------------------------------- */
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.226), 0 0 20px rgba(255, 0, 0, 0.26);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.281), 0 0 30px rgba(255, 0, 0, 0.267);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.24), 0 0 20px rgba(255, 0, 0, 0.199);
+    }
+}
+
+@keyframes pulseRetention {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(201, 194, 194, 0.226), 0 0 20px rgba(221, 216, 216, 0.26);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(240, 237, 237, 0.281), 0 0 30px rgba(167, 163, 163, 0.267);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(211, 205, 205, 0.24), 0 0 20px rgba(177, 173, 173, 0.199);
+    }
+}
+
 .button {
     margin-top: 3rem;
-    padding: 12px 24px;
+    padding: 20px 40px;
+    text-align: center;
     border: none;
-    font-size: 1.2rem;
+    font-size: 20px;
     cursor: pointer;
+    line-height: normal;
     font-weight: bold;
     border-radius: 50px;
-    background: linear-gradient(45deg, #D14200, #D4336E, #6E0A62);
+    background: linear-gradient(45deg, #3d0303, #D4336E, #6E0A62);
     background-size: 600%;
     position: relative; /* Necessário para o pseudo-elemento funcionar corretamente */
     z-index: 1; /* Garante que o botão fique acima do ::before */
     transition: transform 0.3s ease-in-out;
     color: #ffffff;
+    animation: pulse 2s infinite; /* Aplica a animação de pulsar */
 }
 
-.retentionSectionButton, .button {
-    padding: 15px 40px;
-    font-size: 20px;
-    text-align: center;
-    line-height: normal;
-    color: #ffffff;
-    border-radius: 50px;
-    position: relative; /* Necessário para o pseudo-elemento funcionar corretamente */
-    background: linear-gradient(45deg, #D14200, #D4336E, #6E0A62);
-    background-size: 600%;
-    transition: all 0.3s;
-    animation: anime 10s linear infinite;
-    z-index: 1; /* Garante que o botão sempre fique acima do ::before */
-}
-
-.retentionSectionButton::before, .button::before {
-    content: '';
-    position: absolute;
-    top: -3px; /* Ajuste para reduzir a área de blur */
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    border-radius: 50px;
-    background: linear-gradient(45deg, #2e2e2e, #FF3C83, #FF8C94);
-    background-size: 600%;
-    filter: blur(15px); /* Blur menor */
-    z-index: -1; /* Fica atrás do botão */
-    animation: anime 10s linear infinite; /* Mantém a animação sempre ativa */
-    opacity: 1; /* Garante que o elemento esteja visível */
-}
-
-/* Animação gradiente */
-@keyframes anime {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.retentionSectionButton{
+    background: linear-gradient(45deg, #2f020256, #2f0202b4, #2f02026c);
+    animation: pulseRetention 2s infinite; /* Aplica a animação de pulsar */
 }
 
 .retentionSectionButton:hover, .button:hover {
-    transform: scale(1.05);
+    opacity: 1;
 }
 
 .button:active {
     transform: scale(0.95);
 }
-
 /* --------------------------------Title-------------------------------- */
 
 .titleDefault {
