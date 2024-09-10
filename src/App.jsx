@@ -14,14 +14,14 @@ import './css/global.css';
 
 function App() {
     return (
-        <ParallaxProvider> {/* Envolva seu app com o ParallaxProvider */}
+        <ParallaxProvider>
             <Header/>
             <HomeSection/>
             <SpecialtySection/>
             <BenefitsSection/>
             <AboutMeSection/>
             <RetentionSection/>
-            <FAQSection/> {/* Por exemplo, o FAQSection pode usar o parallax */}
+            <FAQSection/> 
             <MediaSection/>
             <Footer/>
             <Whatsapp/>
