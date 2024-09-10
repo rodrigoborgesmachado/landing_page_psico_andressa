@@ -140,7 +140,7 @@ function AboutMeSection() {
                     </div>
                 </div>
             </section>
-            <section className={styles.mobileAboutMeSection}>
+            <section id={'sobre'} className={styles.mobileAboutMeSection}>
                 <div>
                     <Title title={'Sobre Minha Jornada'} />
                     <div className={styles.mobileBoxImages}>
