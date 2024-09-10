@@ -31,15 +31,15 @@ const Header = () => {
     return (<span>
             <header className={headerClasses}>
                 <div className={styles.imgBox}>
-                    <img src="/images/logo-branca.svg" alt="logo"/>
+                    <img src="/images/header_logo.svg" alt="logo"/>
                 </div>
                 <nav>
                     <ul>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
                         <li><a href="#terapia">TERAPIA</a></li>
                         <li><a href="#sobre">SOBRE</a></li>
-                        <li><a href="#servicos">SERVIÇOS</a></li>
-                        <li><a href="#duvidas">DÚVIDAS</a></li>
                         <li><a href="#contato">CONTATO</a></li>
+                        <li><a href="#duvidas">DÚVIDAS</a></li>
                     </ul>
                 </nav>
             </header>

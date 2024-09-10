@@ -54,7 +54,7 @@ function RetentionSection() {
     };
 
     return (
-        <section className={styles.retentionSection}>
+        <section id={'contato'} className={styles.retentionSection}>
             <div
                 ref={sectionRef} // Associa o ref à div
                 // Usa `opacity: 0` até que o conteúdo seja visível

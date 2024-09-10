@@ -31,7 +31,7 @@ function SpecialtySection() {
     ];
 
     return ( 
-        <section className={styles.specialtySection}>
+        <section id={'servicos'} className={styles.specialtySection}>
             <Title title="Minha especialidade" style='titleDefault'/>
             <ContentBoxGrid boxContents={boxContents} />
             <Button name="Para Você ou Sua Empresa" onClick={openModal} />

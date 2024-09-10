@@ -24,7 +24,7 @@ function FAQSection() {
 
     return (
         <ParallaxProvider>
-            <section className={styles.faqSection}>
+            <section id={'duvidas'} className={styles.faqSection}>
                 <ParallaxBanner
                     layers={[
                         { image: '/images/parallaxfaq.png', speed: -10 }

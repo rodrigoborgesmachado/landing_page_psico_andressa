@@ -93,7 +93,7 @@ function AboutMeSection() {
 
     return (
         <>
-            <section className={styles.aboutMeSection}>
+            <section id={'sobre'} className={styles.aboutMeSection}>
                 <div>
                     <Title title={'Sobre Minha Jornada'} />
                     <div>

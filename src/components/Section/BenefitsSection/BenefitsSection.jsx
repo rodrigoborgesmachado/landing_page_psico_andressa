@@ -68,7 +68,7 @@ function BenefitsSection() {
 	
 
 	return (
-		<section className={css.benefitsSection}>
+		<section id={'terapia'} className={css.benefitsSection}>
 			<div >
 				<div>
 					<div>
