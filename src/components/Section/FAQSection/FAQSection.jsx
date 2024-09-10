@@ -24,14 +24,14 @@ function FAQSection() {
 
     return (
         <ParallaxProvider>
-            <section id={'duvidas'} className={styles.faqSection}>
+            <section className={styles.faqSection}>
                 <ParallaxBanner
                     layers={[
                         { image: '/images/parallaxfaq.png', speed: -10 }
                     ]}
                     className={styles.faqImage}
                 />
-                <div className={styles.faqBody}>
+                <div id={'duvidas'} className={styles.faqBody}>
                     <Title title="Perguntas Comuns, Respostas Úteis" style={'titleFAQSection'} />
                     <div className={styles.faqList}>
                         {perguntas.map((item, index) => (
