@@ -5,12 +5,22 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: transparent;
     z-index: 1000;
     box-shadow: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
     height: 15vh;
     overflow: hidden;
+}
+
+.stickyHeader a:hover {
+    -webkit-text-stroke: 1px white;
+    transition: transform 0.2s ease;
+}
+
+.stickyHeader ul {
+    background-color: rgba(0, 0, 0, 0.15); /* Ajuste para permitir o efeito de blur */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 
 .stickyHeader img {
@@ -22,6 +32,11 @@
     height: 10vh;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-bottom: none;
+}
+
+.stickyHeader.scrolled ul {
+    background-color: transparent;
+    backdrop-filter: none;
 }
 
 .stickyHeader.scrolled img {
@@ -52,17 +67,15 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-text-stroke: 0 white;
 }
 
 .stickyHeader.scrolled nav ul li a:hover {
     font-weight: bold;
     border-bottom: 2px solid white;
     transition: border-bottom 0.3s ease;
-}
-
-.stickyHeader.scrolled nav ul li a {
-    position: relative;
-    overflow: hidden;
 }
 
 .stickyHeader.scrolled nav ul li a::after {
@@ -83,7 +96,6 @@
     transform-origin: bottom;
 }
 
-
 .stickyHeader nav {
     height: fit-content;
     width: fit-content;
@@ -96,8 +108,7 @@
     justify-content: right;
     list-style-type: none;
     width: fit-content;
-    padding: 0.8rem 0;
-    border-bottom: 1px solid white;
+    padding: 1.2rem 0.4rem;
 }
 
 .stickyHeader nav ul li a {

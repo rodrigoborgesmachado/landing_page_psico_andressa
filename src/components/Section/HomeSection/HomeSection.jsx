@@ -3,7 +3,7 @@ import styles from "./HomeSection.module.css";
 
 function HomeSection() {
     return (
-        <section className={styles.homeSection}>
+        <section className={styles.homeSection} id={"home"}>
             <div>
                 <HomeContent />
             </div>

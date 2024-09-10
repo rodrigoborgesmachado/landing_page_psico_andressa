@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    overflow: hidden;
+}
+
 section {
     min-height: 75vh;
     padding: 5rem 0;

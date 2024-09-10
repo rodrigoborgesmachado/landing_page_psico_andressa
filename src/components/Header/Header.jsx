@@ -31,7 +31,7 @@ const Header = () => {
     return (<span>
             <header className={headerClasses}>
                 <div className={styles.imgBox}>
-                    <img src="/images/header_logo.svg" alt="logo"/>
+                    <a href={"#home"}><img src="/images/header_logo.svg" alt="logo"/></a>
                 </div>
                 <nav>
                     <ul>

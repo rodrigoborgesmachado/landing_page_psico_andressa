@@ -5,12 +5,11 @@
     align-items: center;
     justify-content: start;
     height: 100vh;
-    background-image: url('/images/FundoHomeSection.svg');
+    background-image: url('/public/images/16.svg');
     background-size: cover;
     background-position: center;
     position: relative;
     color: white;
-
 }
 
 .homeSection>div {
