@@ -67,7 +67,7 @@ function RetentionSection() {
                         Você pode descobrir sua essência e desenvolver seu potencial reconstruindo sua autoestima.
                     </span>
                     <br />
-                    Aprenda a se comunicar de forma assertiva, trabalhe conflitos internos e em seus relacionamentos, e encontre mais sentido e qualidade de vida. O processo terapêutico oferece um espaço acolhedor e seguro para você se conhecer melhor e crescer. Vamos começar essa jornada juntas?
+                    Aprenda a se comunicar de forma assertiva, trabalhe conflitos internos e em seus relacionamentos, e encontre mais sentido e qualidade de vida. O processo terapêutico oferece um espaço acolhedor e seguro para você se conhecer melhor e crescer. Vamos começar essa jornada juntos?
                 </p>
                 <Button name="Entre em contato por e-mail" style="retentionSectionButton" onClick={openModal} />
                 <div className={`${styles.flower} ${styles['flower-bottom-left']}`}></div>

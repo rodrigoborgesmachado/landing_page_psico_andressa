@@ -50,7 +50,9 @@
 }
 
 .retentionSectionButton{
-    background: linear-gradient(45deg, #2f020256, #2f0202b4, #2f02026c);
+    /* background: linear-gradient(45deg, #2f020256, #2f0202b4, #2f02026c); */
+    background: linear-gradient(45deg, #cfcfcf, #ffffff, #fdfdfd);
+    color: #520404;
     animation: pulseRetention 2s infinite; /* Aplica a animação de pulsar */
 }
 
