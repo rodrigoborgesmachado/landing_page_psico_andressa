@@ -42,11 +42,11 @@ function Footer() {
                 </div>
                 <div>
                     <ol>
-                        <li><a href="">Terapia</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Dúvidas</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#terapia">Terapia</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#duvidas">Dúvidas</a></li>
                     </ol>
                 </div>
             </div>
