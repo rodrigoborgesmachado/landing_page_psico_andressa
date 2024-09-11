@@ -5,11 +5,26 @@
     align-items: center;
     justify-content: start;
     height: 100vh;
-    background-image: url('/images/Home_SeAbrace.svg');
-    background-size: cover;
-    background-position: center;
+    background: transparent;
     position: relative;
     color: white;
+}
+
+.carousel {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1000;
+}
+
+.carouselDesktop {
+    display: block;
+}
+
+.carouselMobile {
+    display: none;
 }
 
 .homeSection>div {
@@ -77,6 +92,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .carouselMobile {
+        display: block;
+    }
+
+    .carouselDesktop {
+        display: none;
+    }
+
     .heroContent p {
         text-align: center;
     }
