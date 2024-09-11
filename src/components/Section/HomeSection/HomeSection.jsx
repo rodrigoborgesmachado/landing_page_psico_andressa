@@ -65,7 +65,7 @@ function HomeSection() {
                                 style={{objectFit: 'cover', height: '100%', width: '100%'}}
                             />
                         </div>
-                        <div key={index} style={{height: '100vh'}} className={styles.carouselMobile}>
+                        <div key={index + images.length} style={{height: '100vh'}} className={styles.carouselMobile}>
                             <img
                                 src={`/images/Mobile_${image}`}
                                 alt={`Slide ${index + 1}`}
