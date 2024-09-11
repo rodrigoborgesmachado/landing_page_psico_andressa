@@ -15,7 +15,7 @@
 .benefitsSection>div>div>div>p{
     margin: 20px 0;
     width: 85%;
-    font-size: 20px; 
+    font-size: 1.25rem;
 }
 
 .benefitsSection>div>div:nth-child(1){
@@ -58,7 +58,7 @@
     .benefitsSection>div>div>div>p{
         margin: 20px 0;
         width: 85%;
-        font-size: 20px; 
+        font-size: 1.25rem;
     }
 
     .benefitsSection>div>div:nth-child(1){
