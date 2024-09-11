@@ -8,6 +8,8 @@
     background: transparent;
     position: relative;
     color: white;
+    overflow-x: hidden; /* Adicione isso */
+    overflow-y: auto; 
 }
 
 .carousel {
@@ -17,6 +19,8 @@
     height: 100vh;
     width: 100vw;
     z-index: -1000;
+    overflow: hidden; 
+
 }
 
 .carouselDesktop {
