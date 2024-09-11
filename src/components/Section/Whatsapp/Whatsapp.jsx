@@ -1,6 +1,20 @@
+import { useEffect, useState } from 'react';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 export default function Whatsapp() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Verifica o tamanho da tela para ajustar a posição do botão
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Define como mobile se a largura da tela for menor ou igual a 768px
+        };
+
+        handleResize(); // Executa na primeira renderização
+        window.addEventListener('resize', handleResize); // Adiciona o listener para o resize
+
+        return () => window.removeEventListener('resize', handleResize); // Remove o listener ao desmontar o componente
+    }, []);
     return (
         <FloatingWhatsApp
             phoneNumber='+553496545701' // Número do WhatsApp em formato internacional para onde as mensagens serão enviadas
@@ -15,8 +29,19 @@ export default function Whatsapp() {
             notification={true} // Habilita notificações que aparecem antes do usuário abrir o chat
             notificationDelay={10} // Intervalo de tempo em segundos entre as notificações repetitivas
             notificationSound={true} // Habilita o som de notificação quando a notificação é exibida
-            chatboxHeight={370} // Define a altura da caixa de chat em pixels
+            chatboxHeight={520} // Define a altura da caixa de chat em pixels
             avatar='/images/whatsApp_Andressa.png'// Aqui não definimos o avatar, então o avatar padrão será utilizado
+            buttonStyle={isMobile ? {
+                position: 'fixed',
+                bottom: '120px',  // Altura para mobile
+                right: '20px',   // Posição para mobile
+                zIndex: 1000
+            } : {
+                position: 'fixed',
+                bottom: '20px', // Altura para desktop
+                right: '20px',   // Posição para desktop
+                zIndex: 1000
+            }}
         />
     );
 }
