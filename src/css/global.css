@@ -32,11 +32,12 @@ section > div {
 
 /* Estilização da barra de rolagem para navegadores WebKit (Chrome, Safari, Edge, Opera) */
  ::-webkit-scrollbar {
-    background-color:rgba(26, 26, 26, 0.5)
-    ;
+    background-color:rgba(26, 26, 26, 0.5);
     width: 15px;
 } 
 
 ::-webkit-scrollbar-thumb {
     background-color: rgba(248, 232, 188, 1);
+    border-radius: 10px;
+    border:rgba(26, 26, 26,0.2) 1px solid;
 }
