@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import HomeContent from "./HomeContent";
@@ -57,22 +57,22 @@ function HomeSection() {
               >
 
                 {images.map((image, index) => (
-                    <>
-                        <div key={index} style={{height: '100vh'}} className={styles.carouselDesktop}>
-                            <img
-                                src={`/images/${image}`}
-                                alt={`Slide ${index + 1}`}
-                                style={{objectFit: 'cover', height: '100%', width: '100%'}}
-                            />
-                        </div>
-                        <div key={index + images.length} style={{height: '100vh'}} className={styles.carouselMobile}>
-                            <img
-                                src={`/images/Mobile_${image}`}
-                                alt={`Slide ${index + 1}`}
-                                style={{objectFit: 'cover', height: '100%', width: '100%'}}
-                            />
-                        </div>
-                    </>
+                <React.Fragment key={index}>
+                    <div key={`desktop-${index}`} style={{height: '100vh'}} className={styles.carouselDesktop}>
+                    <img
+                        src={`/images/${image}`}
+                        alt={`Slide ${index + 1}`}
+                        style={{objectFit: 'cover', height: '100%', width: '100%'}}
+                    />
+                    </div>
+                    <div key={`mobile-${index}`} style={{height: '100vh'}} className={styles.carouselMobile}>
+                    <img
+                        src={`/images/Mobile_${image}`}
+                        alt={`Slide ${index + 1}`}
+                        style={{objectFit: 'cover', height: '100%', width: '100%'}}
+                    />
+                    </div>
+                </React.Fragment>
                 ))}
             </Carousel>
             </span>

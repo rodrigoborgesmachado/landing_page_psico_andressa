@@ -25,7 +25,28 @@ section > div {
     width: min(75rem, 100%);
 }
 
-/* No seu arquivo CSS global (e.g., styles.css ou App.css) */
+/* Para remover a rolagem (classe que pode ser aplicada a elementos que você não quer permitir a rolagem) */
 .no-scroll {
     overflow: hidden;
 }
+
+/* Estilização da barra de rolagem para navegadores WebKit (Chrome, Safari, Edge, Opera) */
+ ::-webkit-scrollbar {
+    background-color:#1A1A1A;
+    width: 15px;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color:#6e0d0a; 
+    height: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(248, 232, 188, 1);
+}
+
+/* 
+
+
+
+ */
