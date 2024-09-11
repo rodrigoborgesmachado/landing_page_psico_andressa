@@ -76,7 +76,7 @@
   height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 8px 5px;
+  margin: 5px 15px 8px 5px;
   flex-shrink: 0;
 }
 
@@ -136,7 +136,7 @@
 
   .faqDetailsContent {
     font-size: 20px; /* Padronizado para 20px */
-    padding: 15px 25px;
+    padding: 15px 30px;
   }
 
   .faqImage {
@@ -160,7 +160,7 @@
 
   .faqDetails {
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 16px; /* Padronizado para 20px */
   }
 
   .faqImage {
@@ -169,12 +169,18 @@
   }
 
   .faqSummary {
-    font-size: 16px;
+    font-size: 16px; /* Padronizado para 20px */
+  }
+
+  .faqSummaryIcon {
+    width: 8px;
+    height: 8px;
+    margin: 3px 15px 3px 5px;
   }
 
   .faqDetailsContent {
-    font-size: 16px;
-    padding: 10px 15px;
+    font-size: 16px; /* Padronizado para 20px */
+    padding: 10px 30px;
   }
 
   .faqList {

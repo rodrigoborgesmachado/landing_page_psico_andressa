@@ -85,7 +85,7 @@
 
 .titleFAQSection {
     padding: 0px;
-    margin: 10px;
+    margin: auto;
     color: black;
     text-align: center;
     margin-top: 70px;
@@ -93,7 +93,6 @@
     position: sticky; 
     top: 0; 
     background-color: white; 
-    z-index: 10;
 }
 
 
