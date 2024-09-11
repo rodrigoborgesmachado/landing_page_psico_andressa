@@ -3,10 +3,6 @@ import styles from './Header.module.css';
 
 const Header = () => {
 
-    const showSettings = (event) => {
-        event.preventDefault();
-    }
-
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -31,7 +27,7 @@ const Header = () => {
     return (<span>
             <header className={headerClasses}>
                 <div className={styles.imgBox}>
-                    <a href={"#home"}><img src="/images/header_logo.svg" alt="logo"/></a>
+                    <a href="#home"><img src="/images/header_logo.svg" alt="logo"/></a>
                 </div>
                 <nav>
                     <ul>
