@@ -92,6 +92,7 @@ a:link {
         border-radius: 0px;
         z-index: 1;
         margin-top: 0px;
+        box-shadow: none;
         /* border: 1px solid brown; */
     }
 
