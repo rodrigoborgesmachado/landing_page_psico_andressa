@@ -29,7 +29,7 @@ export default function Whatsapp() {
             notification={true} // Habilita notificações que aparecem antes do usuário abrir o chat
             notificationDelay={10} // Intervalo de tempo em segundos entre as notificações repetitivas
             notificationSound={true} // Habilita o som de notificação quando a notificação é exibida
-            chatboxHeight={520} // Define a altura da caixa de chat em pixels
+            chatboxHeight={360} // Define a altura da caixa de chat em pixels
             avatar='/images/whatsApp_Andressa.png'// Aqui não definimos o avatar, então o avatar padrão será utilizado
             buttonStyle={isMobile ? {
                 position: 'fixed',
