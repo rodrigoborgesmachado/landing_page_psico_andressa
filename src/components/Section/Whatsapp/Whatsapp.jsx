@@ -31,17 +31,6 @@ export default function Whatsapp() {
             notificationSound={true} // Habilita o som de notificação quando a notificação é exibida
             chatboxHeight={360} // Define a altura da caixa de chat em pixels
             avatar='/images/whatsApp_Andressa.png'// Aqui não definimos o avatar, então o avatar padrão será utilizado
-            buttonStyle={isMobile ? {
-                position: 'fixed',
-                bottom: '120px',  // Altura para mobile
-                right: '20px',   // Posição para mobile
-                zIndex: 1000
-            } : {
-                position: 'fixed',
-                bottom: '20px', // Altura para desktop
-                right: '20px',   // Posição para desktop
-                zIndex: 1000
-            }}
         />
     );
 }

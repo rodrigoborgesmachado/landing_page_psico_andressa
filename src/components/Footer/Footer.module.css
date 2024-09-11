@@ -61,10 +61,10 @@
 
 .footerContent>div:nth-child(3)>ol{
     padding: 10px;
-    display: flex;
     flex-direction: row;
     list-style-type: none;
     border-bottom: 0.5px solid white;
+    display: none;
 }
 
 .footerContent>div:nth-child(3)>ol>li{
@@ -100,6 +100,7 @@
     }
 
     .footerContent>div:nth-child(3)>ol{
+        display: flex;
         flex-direction: column;
         border-left: 0.5px solid white;
         border-bottom: none;
