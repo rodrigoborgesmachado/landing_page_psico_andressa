@@ -17,7 +17,8 @@
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 90%;
-    height: 85%; /* Ajuste de altura automática */
+    height: auto; /* Ajusta automaticamente a altura */
+    max-height: 90vh;
     display: flex;
     flex-direction: row;
     position: relative;
