@@ -17,7 +17,7 @@
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 90%;
-    height: 80%; /* Ajuste de altura automática */
+    height: 85%; /* Ajuste de altura automática */
     display: flex;
     flex-direction: row;
     position: relative;
@@ -112,6 +112,25 @@
     box-sizing: border-box;
     height: 35px; /* Define uma altura fixa para os inputs */
 }
+
+/* .inputWithError .inputMessage {
+    height: 105px; 
+} */
+.textareaMessage {
+    width: 90%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(248, 232, 188, 1);
+    color: #000;
+    box-sizing: border-box;
+    height: auto; 
+    resize: none; 
+    min-height: 105px; 
+    line-height: 1.5; 
+}
+
 
 /* Estilo para os erros específicos nos campos */
 .inputWithError .error {
@@ -266,13 +285,14 @@
     }
 
     .inputWithError {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         margin-bottom: 2px;
         margin-top: 2px;
     }
 
-    .inputWithError input {
+    .inputWithError input 
+    .inputWithError .textareaMessage{
         width: 100%;
         margin-top: 0px;
         margin-bottom: 0px;

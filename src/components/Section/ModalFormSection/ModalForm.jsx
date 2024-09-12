@@ -52,15 +52,16 @@ function ModalForm({ form, errors, successMessage, generalErrorMessage, onInputC
             <div className={styles.inputGroup}>
                 <div className={styles.inputWithError}>
                     <label htmlFor="message">Mensagem:</label>
-                    <input
-                        type="text"
+                    <textarea
                         id="message"
                         name="message"
                         value={form.message}
                         onChange={onInputChange}
+                        className={styles.textareaMessage}  // Classe específica para textarea
+                        rows="3"  // Define 3 linhas por padrão
                     />
                 </div>
-                <div className={styles.divErro}>
+            <div className={styles.divErro}>
                     <span className={`${styles.error} ${errors.message ? styles.visible : ''}`}>{errors.message}</span>
                 </div>
             </div>
