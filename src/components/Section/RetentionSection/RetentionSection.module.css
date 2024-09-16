@@ -41,7 +41,7 @@
     position: absolute;
     width: 230px;
     height: 230px;
-    background: url('/images/retentionLogo.svg');
+    background: url('https://questoesaqui.blob.core.windows.net/psicodede/retentionLogo.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }

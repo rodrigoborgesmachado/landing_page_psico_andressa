@@ -34,7 +34,7 @@ const HeroContent = () => {
   return (
     <div className={styles.heroContent}>
       <img
-        src="/images/home_logo.svg"
+        src="https://questoesaqui.blob.core.windows.net/psicodede/home_logo.svg"
         alt="logo"
         className={`${showImage ? 'animate__animated animate__slideInLeft' : ''}`}
         style={{ opacity: showImage ? 1 : 0, transition: 'opacity 0.5s ease-in-out', animationFillMode: 'forwards' }}

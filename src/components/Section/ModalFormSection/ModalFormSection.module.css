@@ -49,7 +49,7 @@
 
 .imageContainer {
     width: 45%;
-    background-image: url('/images/Modal_Img_desktop.jpg');
+    background-image: url('https://questoesaqui.blob.core.windows.net/psicodede/Modal_Img_desktop.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;

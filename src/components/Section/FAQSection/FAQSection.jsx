@@ -27,7 +27,7 @@ function FAQSection() {
             <section className={styles.faqSection}>
                 <ParallaxBanner
                     layers={[
-                        { image: '/images/parallaxfaq.png', speed: -15 }
+                        { image: 'https://questoesaqui.blob.core.windows.net/psicodede/parallaxfaq.png', speed: -15 }
                     ]}
                     className={styles.faqImage}
                 />

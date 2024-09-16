@@ -27,7 +27,7 @@ const Header = () => {
     return (<span>
             <header className={headerClasses}>
                 <div className={styles.imgBox}>
-                    <a href="#home"><img src="/images/header_logo.svg" alt="logo"/></a>
+                    <a href="#home"><img src="https://questoesaqui.blob.core.windows.net/psicodede/header_logo.svg" alt="logo"/></a>
                 </div>
                 <nav>
                     <ul>

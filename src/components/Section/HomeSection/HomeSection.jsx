@@ -60,14 +60,14 @@ function HomeSection() {
                 <React.Fragment key={index}>
                     <div key={`desktop-${index}`} style={{height: '100vh'}} className={styles.carouselDesktop}>
                     <img
-                        src={`/images/${image}`}
+                        src={`https://questoesaqui.blob.core.windows.net/psicodede/${image}`}
                         alt={`Slide ${index + 1}`}
                         style={{objectFit: 'cover', height: '100%', width: '100%'}}
                     />
                     </div>
                     <div key={`mobile-${index}`} style={{height: '100vh'}} className={styles.carouselMobile}>
                     <img
-                        src={`/images/Mobile_${image}`}
+                        src={`https://questoesaqui.blob.core.windows.net/psicodede/Mobile_${image}`}
                         alt={`Slide ${index + 1}`}
                         style={{objectFit: 'cover', height: '100%', width: '100%'}}
                     />

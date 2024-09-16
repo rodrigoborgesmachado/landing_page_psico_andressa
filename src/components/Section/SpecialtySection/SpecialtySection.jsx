@@ -25,9 +25,9 @@ function SpecialtySection() {
     };
 
     const boxContents = [
-        { id: 1, image: "images/specialty01.svg", imageDescription: "Imagem representando psicoterapia", title: "Psicoterapia", description: "Atendimento individualizado para desenvolver a autoestima, autoconhecimento e saúde mental." },
-        { id: 2, image: "images/specialty02.svg", imageDescription: "Imagem representando cursos e palestras", title: "Cursos e Palestras", description: "Encontros presenciais e online para aprofundar temas relacionados ao desenvolvimento pessoal." },
-        { id: 3, image: "images/specialty03.svg", imageDescription: "Imagem representando terapia sistêmica", title: "Terapia Sistêmica", description: "Sessões de terapia sistêmica para identificar e transformar padrões familiares." }
+        { id: 1, image: "https://questoesaqui.blob.core.windows.net/psicodede/specialty01.svg", imageDescription: "Imagem representando psicoterapia", title: "Psicoterapia", description: "Atendimento individualizado para desenvolver a autoestima, autoconhecimento e saúde mental." },
+        { id: 2, image: "https://questoesaqui.blob.core.windows.net/psicodede/specialty02.svg", imageDescription: "Imagem representando cursos e palestras", title: "Cursos e Palestras", description: "Encontros presenciais e online para aprofundar temas relacionados ao desenvolvimento pessoal." },
+        { id: 3, image: "https://questoesaqui.blob.core.windows.net/psicodede/specialty03.svg", imageDescription: "Imagem representando terapia sistêmica", title: "Terapia Sistêmica", description: "Sessões de terapia sistêmica para identificar e transformar padrões familiares." }
     ];
 
     return ( 

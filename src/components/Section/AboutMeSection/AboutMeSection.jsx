@@ -121,8 +121,8 @@ function AboutMeSection() {
                                 ))}
                             </div>
                             <div className={styles.boxImages}>
-                                <img src="images/andressa1.svg" alt="Foto da Psicóloga Andressa em um auditório"/>
-                                <img src="images/andressa2.svg" alt="Foto da Psicóloga Andressa"/>
+                                <img src="https://questoesaqui.blob.core.windows.net/psicodede/andressa1.svg" alt="Foto da Psicóloga Andressa em um auditório"/>
+                                <img src="https://questoesaqui.blob.core.windows.net/psicodede/andressa2.svg" alt="Foto da Psicóloga Andressa"/>
                             </div>
                             <div>
                                 {boxTopicos.slice(2, 4).map((topico, index) => (
@@ -155,7 +155,7 @@ function AboutMeSection() {
                             </div>
                         </div>
                         <div className={styles.libelulaAboutMe}>
-                            <img src="/images/AboutMe_Right_Libelula.svg" alt="libelula"/>
+                            <img src="https://questoesaqui.blob.core.windows.net/psicodede/AboutMe_Right_Libelula.svg" alt="libelula"/>
                         </div>
                     </div>
                 </section>
@@ -163,8 +163,8 @@ function AboutMeSection() {
                     <div>
                         <Title title={'Sobre Minha Jornada'}/>
                         <div className={styles.mobileBoxImages}>
-                            <img src="images/andressa1.svg" alt="Foto da Psicóloga Andressa em um auditório"/>
-                            <img src="images/andressa2.svg" alt="Foto da Psicóloga Andressa"/>
+                            <img src="https://questoesaqui.blob.core.windows.net/psicodede/andressa1.svg" alt="Foto da Psicóloga Andressa em um auditório"/>
+                            <img src="https://questoesaqui.blob.core.windows.net/psicodede/andressa2.svg" alt="Foto da Psicóloga Andressa"/>
                         </div>
                         <span className={styles.mobileCarousel}>
                             <Carousel
