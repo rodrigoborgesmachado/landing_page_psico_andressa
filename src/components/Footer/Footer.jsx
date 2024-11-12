@@ -6,7 +6,7 @@ function Footer() {
     const infoSocialMedia = [
         {
             image:"/icons/instagram.png",
-            link:"https://www.instagram.com/psiandressaa/",
+            link:"https://www.instagram.com/integraterapia_/profilecard/?igsh=OWJ2Y3VvczJ0YjQ2",
             descricao:"Icone instagram"
         }, 
         {
